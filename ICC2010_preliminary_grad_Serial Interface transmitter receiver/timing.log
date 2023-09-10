@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : S2
+Version: O-2018.06
+Date   : Fri Feb 17 21:47:39 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: counter_reg[1]
+              (falling edge-triggered flip-flop clocked by CLK)
+  Endpoint: sd (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  S2                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (fall edge)                   60.00      60.00
+  clock network delay (ideal)              1.00      61.00
+  counter_reg[1]/CKN (DFFNSRX1)            0.00      61.00 f
+  counter_reg[1]/Q (DFFNSRX1)              1.00      62.00 r
+  U883/Y (XNOR2X1)                         0.74      62.74 r
+  U919/Y (CLKINVX1)                        0.66      63.40 f
+  U992/Y (NAND2X1)                         0.47      63.87 r
+  U884/Y (XOR2X1)                          0.75      64.61 r
+  U920/Y (CLKINVX1)                        0.44      65.06 f
+  U1249/Y (NOR2X1)                         0.42      65.48 r
+  U1003/Y (NOR2BX1)                        0.31      65.78 r
+  U1002/Y (CLKBUFX3)                       0.71      66.50 r
+  U1254/Y (AOI22X1)                        0.29      66.79 f
+  U1256/Y (NAND4X1)                        0.28      67.06 r
+  U923/Y (AOI32X1)                         0.23      67.30 f
+  U921/Y (NAND2X1)                         0.26      67.55 r
+  U989/Y (AOI222XL)                        0.28      67.83 f
+  U987/Y (OAI22XL)                         0.57      68.40 r
+  U985/Y (AOI2BB2X1)                       0.28      68.67 f
+  U984/Y (NOR3X1)                          0.49      69.16 r
+  sd_tri/Y (TBUFX16)                       0.77      69.93 r
+  sd (inout)                               0.00      69.93 r
+  data arrival time                                  69.93
+
+  clock CLK (rise edge)                  120.00     120.00
+  clock network delay (ideal)              1.00     121.00
+  clock uncertainty                       -1.00     120.00
+  output external delay                  -45.00      75.00
+  data required time                                 75.00
+  -----------------------------------------------------------
+  data required time                                 75.00
+  data arrival time                                 -69.93
+  -----------------------------------------------------------
+  slack (MET)                                         5.07
+
+
+1

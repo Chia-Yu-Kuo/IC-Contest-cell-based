@@ -1,0 +1,90 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LMFE
+Version: O-2018.06
+Date   : Sat Mar 18 20:06:22 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Ccnt_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sorted_reg_reg[26][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LMFE               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  Ccnt_reg[1]/CK (DFFRX1)                  0.00 #     0.50 r
+  Ccnt_reg[1]/Q (DFFRX1)                   0.97       1.47 r
+  U45487/Y (AND2X1)                        0.39       1.86 r
+  U45485/Y (AND2X1)                        0.38       2.24 r
+  U45483/Y (OR2X1)                         0.36       2.60 r
+  U45481/Y (OR2X1)                         0.36       2.96 r
+  U45479/Y (OR2X1)                         0.36       3.31 r
+  U45478/Y (XNOR2X1)                       0.45       3.76 f
+  U30443/Y (NOR2BX1)                       0.42       4.19 f
+  U29557/Y (NAND2X1)                       0.23       4.41 r
+  U29556/Y (CLKBUFX3)                      0.55       4.96 r
+  U28531/Y (CLKINVX1)                      0.33       5.29 f
+  U27935/Y (CLKBUFX3)                      0.68       5.97 f
+  U29609/Y (NAND2X1)                       0.93       6.90 r
+  U29608/Y (CLKBUFX3)                      0.71       7.61 r
+  U29016/Y (CLKINVX1)                      0.57       8.18 f
+  U27936/Y (CLKBUFX3)                      0.88       9.06 f
+  U27143/Y (INVX3)                         0.71       9.77 r
+  U34417/Y (OAI22XL)                       0.33      10.10 f
+  U34414/Y (NOR4X1)                        0.33      10.42 r
+  U30427/Y (NAND4X1)                       0.24      10.66 f
+  U30425/Y (AOI222XL)                      0.69      11.35 r
+  U30502/Y (NAND4X1)                       0.31      11.66 f
+  U30454/Y (NOR4X1)                        0.32      11.99 r
+  U30526/Y (NAND4X1)                       0.25      12.23 f
+  U30478/Y (NOR4X1)                        0.38      12.62 r
+  U29568/Y (NAND4X1)                       0.24      12.85 f
+  U32217/Y (AOI222XL)                      0.55      13.40 r
+  U20529/Y (OAI221XL)                      0.53      13.94 f
+  U29607/Y (CLKBUFX3)                      0.95      14.89 f
+  U28986/Y (CLKBUFX3)                      0.95      15.84 f
+  U45790/Y (OAI21XL)                       0.68      16.52 r
+  U45793/Y (AOI2BB2X1)                     0.26      16.78 f
+  U45794/Y (OAI221XL)                      0.32      17.10 r
+  U45795/Y (OAI211X1)                      0.27      17.36 f
+  U45796/Y (AO22X1)                        0.46      17.83 f
+  U20433/Y (OAI21X1)                       0.41      18.24 r
+  U30698/Y (CLKINVX2)                      0.68      18.92 f
+  U29714/Y (NAND2X1)                       0.62      19.54 r
+  U30692/Y (OAI22X2)                       0.49      20.02 f
+  U32778/Y (AOI222XL)                      0.64      20.66 r
+  U32777/Y (OAI221XL)                      0.37      21.04 f
+  sorted_reg_reg[26][6]/D (DFFRX1)         0.00      21.04 f
+  data arrival time                                  21.04
+
+  clock clk (rise edge)                  100.00     100.00
+  clock network delay (ideal)              0.50     100.50
+  clock uncertainty                       -0.10     100.40
+  sorted_reg_reg[26][6]/CK (DFFRX1)        0.00     100.40 r
+  library setup time                      -0.27     100.13
+  data required time                                100.13
+  -----------------------------------------------------------
+  data required time                                100.13
+  data arrival time                                 -21.04
+  -----------------------------------------------------------
+  slack (MET)                                        79.09
+
+
+1

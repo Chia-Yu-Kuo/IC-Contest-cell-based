@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ATE
+Version: O-2018.06
+Date   : Sat Mar 11 12:42:55 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: pix_data[1]
+              (input port clocked by CLK)
+  Endpoint: pixel_reg_reg[7][1]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ATE                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input external delay                    11.00      12.00 r
+  pix_data[1] (in)                         0.02      12.02 r
+  U3032/Y (CLKINVX1)                       0.23      12.25 f
+  U1822/Y (NOR2XL)                         0.69      12.94 r
+  U2936/Y (CLKINVX1)                       0.75      13.69 f
+  U2502/Y (CLKBUFX3)                       1.01      14.70 f
+  U2469/Y (CLKBUFX3)                       0.97      15.67 f
+  U1943/Y (MXI2XL)                         0.62      16.29 r
+  U1595/Y (CLKINVX1)                       0.25      16.54 f
+  U1596/Y (CLKINVX1)                       0.15      16.69 r
+  pixel_reg_reg[7][1]/D (DFFRX1)           0.00      16.69 r
+  data arrival time                                  16.69
+
+  clock CLK (rise edge)                   22.00      22.00
+  clock network delay (ideal)              1.00      23.00
+  clock uncertainty                       -1.00      22.00
+  pixel_reg_reg[7][1]/CK (DFFRX1)          0.00      22.00 r
+  library setup time                      -0.24      21.76
+  data required time                                 21.76
+  -----------------------------------------------------------
+  data required time                                 21.76
+  data arrival time                                 -16.69
+  -----------------------------------------------------------
+  slack (MET)                                         5.07
+
+
+1

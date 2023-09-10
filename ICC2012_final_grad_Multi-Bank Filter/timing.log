@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBF
+Version: O-2018.06
+Date   : Fri Mar 24 17:37:17 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: in_reg_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: D_reg_h_reg[6][13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MBF                tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  in_reg_reg[3]/CK (DFFRX4)                               0.00       0.50 r
+  in_reg_reg[3]/Q (DFFRX4)                                0.49       0.99 f
+  U646/Y (BUFX16)                                         0.13       1.13 f
+  U605/Y (CLKINVX16)                                      0.05       1.17 r
+  U592/Y (INVX20)                                         0.04       1.21 f
+  U1635/Y (XOR2X4)                                        0.21       1.42 r
+  U621/Y (INVX12)                                         0.11       1.53 f
+  U911/Y (XOR2X4)                                         0.17       1.70 r
+  U580/Y (INVX6)                                          0.16       1.85 f
+  add_101_2_I7/A[6] (MBF_DW01_add_50)                     0.00       1.85 f
+  add_101_2_I7/U174/Y (NAND2X1)                           0.26       2.11 r
+  add_101_2_I7/U101/Y (INVX1)                             0.17       2.29 f
+  add_101_2_I7/U145/Y (AOI21X2)                           0.29       2.58 r
+  add_101_2_I7/U132/Y (OAI21X4)                           0.16       2.74 f
+  add_101_2_I7/U134/Y (AOI21X4)                           0.19       2.93 r
+  add_101_2_I7/U137/Y (OAI21X4)                           0.14       3.07 f
+  add_101_2_I7/U139/Y (AOI21X4)                           0.19       3.26 r
+  add_101_2_I7/U103/Y (OR2X6)                             0.16       3.42 r
+  add_101_2_I7/U131/Y (NAND2X6)                           0.10       3.52 f
+  add_101_2_I7/U144/Y (AO21X4)                            0.24       3.76 f
+  add_101_2_I7/U122/Y (INVX3)                             0.11       3.87 r
+  add_101_2_I7/U143/Y (NAND2X8)                           0.07       3.95 f
+  add_101_2_I7/U130/Y (NAND2X8)                           0.07       4.01 r
+  add_101_2_I7/SUM[13] (MBF_DW01_add_50)                  0.00       4.01 r
+  U817/Y (CLKMX2X4)                                       0.15       4.17 r
+  D_reg_h_reg[6][13]/D (DFFRX1)                           0.00       4.17 r
+  data arrival time                                                  4.17
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.50       4.50
+  clock uncertainty                                      -0.10       4.40
+  D_reg_h_reg[6][13]/CK (DFFRX1)                          0.00       4.40 r
+  library setup time                                     -0.23       4.17
+  data required time                                                 4.17
+  --------------------------------------------------------------------------
+  data required time                                                 4.17
+  data arrival time                                                 -4.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : FAS
+Version: O-2018.06
+Date   : Sun Feb 19 09:45:46 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/CBDK/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                        19663
+Number of nets:                         52212
+Number of cells:                        25264
+Number of combinational cells:          23253
+Number of sequential cells:              1782
+Number of macros/black boxes:               0
+Number of buf/inv:                       6472
+Number of references:                       3
+
+Combinational area:             451258.891825
+Buf/Inv area:                    35013.967438
+Noncombinational area:           44429.443668
+Macro/Black Box area:                0.000000
+Net Interconnect area:         2892601.236053
+
+Total cell area:                495688.335494
+Total area:                    3388289.571547
+1

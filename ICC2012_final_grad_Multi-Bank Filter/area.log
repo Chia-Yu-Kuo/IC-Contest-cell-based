@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : MBF
+Version: O-2018.06
+Date   : Fri Mar 24 17:37:17 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/CBDK/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+    rom_1024x4_t13 (File: /home/user2/icc23/icc2311/iccontest/2012/final/icc2012cb/rom_1024x4_t13/rom_1024x4_t13_slow_syn.db)
+
+Number of ports:                         1522
+Number of nets:                          5620
+Number of cells:                         4289
+Number of combinational cells:           3683
+Number of sequential cells:               573
+Number of macros/black boxes:               1
+Number of buf/inv:                        758
+Number of references:                     176
+
+Combinational area:              37407.300958
+Buf/Inv area:                     5053.159786
+Noncombinational area:           17024.921463
+Macro/Black Box area:            23521.441406
+Net Interconnect area:          434282.213470
+
+Total cell area:                 77953.663828
+Total area:                     512235.877298
+1
