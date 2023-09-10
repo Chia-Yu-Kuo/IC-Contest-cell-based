@@ -1,0 +1,114 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IOTDF
+Version: O-2018.06
+Date   : Tue May  2 20:38:10 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: fn_sel[2] (input port clocked by clk)
+  Endpoint: share_reg_reg[131]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input external delay                                    1.00       2.00 r
+  fn_sel[2] (in)                                          0.00       2.00 r
+  U1665/Y (CLKINVX1)                                      0.04       2.04 f
+  U1684/Y (AND3X2)                                        0.24       2.28 f
+  U2179/Y (CLKBUFX3)                                      0.20       2.48 f
+  U2250/Y (AND2X2)                                        0.17       2.65 f
+  u_avg/up_cnt[0] (AVG)                                   0.00       2.65 f
+  u_avg/U4/Y (OR3X2)                                      0.28       2.92 f
+  u_avg/U103/Y (CLKBUFX3)                                 0.15       3.07 f
+  u_avg/U8/Y (CLKBUFX3)                                   0.19       3.27 f
+  u_avg/U116/Y (AND2X2)                                   0.19       3.46 f
+  u_avg/add_168/A[9] (AVG_DW01_add_1)                     0.00       3.46 f
+  u_avg/add_168/U1479/Y (NAND2XL)                         0.11       3.57 r
+  u_avg/add_168/U1112/Y (OAI21XL)                         0.13       3.70 f
+  u_avg/add_168/U1624/Y (AOI21X1)                         0.15       3.85 r
+  u_avg/add_168/U1147/Y (CLKINVX1)                        0.07       3.92 f
+  u_avg/add_168/U1145/Y (NAND2X1)                         0.07       3.99 r
+  u_avg/add_168/U1146/Y (NAND2X1)                         0.06       4.05 f
+  u_avg/add_168/U1149/Y (AOI21X1)                         0.13       4.17 r
+  u_avg/add_168/U1167/Y (OR2X2)                           0.13       4.31 r
+  u_avg/add_168/U1168/Y (NAND2X2)                         0.05       4.35 f
+  u_avg/add_168/U1172/Y (AOI21X1)                         0.13       4.48 r
+  u_avg/add_168/U1131/Y (CLKINVX1)                        0.07       4.55 f
+  u_avg/add_168/U1102/Y (NAND2X1)                         0.07       4.62 r
+  u_avg/add_168/U1130/Y (NAND2X1)                         0.07       4.69 f
+  u_avg/add_168/U1208/Y (AOI21X1)                         0.15       4.84 r
+  u_avg/add_168/U1158/Y (CLKINVX1)                        0.08       4.92 f
+  u_avg/add_168/U1207/Y (NAND2X1)                         0.07       4.99 r
+  u_avg/add_168/U1128/Y (NAND2X1)                         0.07       5.06 f
+  u_avg/add_168/U1160/Y (AOI21X1)                         0.14       5.20 r
+  u_avg/add_168/U1134/Y (OR2X1)                           0.14       5.34 r
+  u_avg/add_168/U1135/Y (NAND2X1)                         0.07       5.40 f
+  u_avg/add_168/U1161/Y (AOI21X1)                         0.14       5.55 r
+  u_avg/add_168/U1635/Y (OAI21XL)                         0.12       5.67 f
+  u_avg/add_168/U1259/Y (AOI21XL)                         0.23       5.89 r
+  u_avg/add_168/U1636/Y (OAI21XL)                         0.14       6.03 f
+  u_avg/add_168/U1260/Y (AOI21XL)                         0.23       6.26 r
+  u_avg/add_168/U1637/Y (OAI21XL)                         0.14       6.39 f
+  u_avg/add_168/U1261/Y (AOI21XL)                         0.23       6.62 r
+  u_avg/add_168/U1638/Y (OAI21XL)                         0.14       6.76 f
+  u_avg/add_168/U1262/Y (AOI21XL)                         0.23       6.99 r
+  u_avg/add_168/U1639/Y (OAI21XL)                         0.14       7.12 f
+  u_avg/add_168/U1263/Y (AOI21XL)                         0.26       7.38 r
+  u_avg/add_168/U1099/Y (OAI21X1)                         0.12       7.50 f
+  u_avg/add_168/U1143/Y (AOI21XL)                         0.27       7.77 r
+  u_avg/add_168/U1126/Y (OAI21XL)                         0.13       7.90 f
+  u_avg/add_168/U1166/Y (AOI21X1)                         0.15       8.04 r
+  u_avg/add_168/U1132/Y (OR2X1)                           0.14       8.18 r
+  u_avg/add_168/U1133/Y (NAND2X1)                         0.07       8.25 f
+  u_avg/add_168/U1162/Y (AOI21X1)                         0.14       8.39 r
+  u_avg/add_168/U1125/Y (OAI21XL)                         0.13       8.52 f
+  u_avg/add_168/U1174/Y (AOI21X1)                         0.15       8.67 r
+  u_avg/add_168/U1173/Y (INVXL)                           0.06       8.73 f
+  u_avg/add_168/U1142/Y (NAND2XL)                         0.09       8.83 r
+  u_avg/add_168/U1129/Y (NAND2X1)                         0.08       8.91 f
+  u_avg/add_168/U1175/Y (AOI21X1)                         0.15       9.06 r
+  u_avg/add_168/U1212/Y (CLKINVX1)                        0.08       9.13 f
+  u_avg/add_168/U1210/Y (NAND2X1)                         0.07       9.21 r
+  u_avg/add_168/U1211/Y (NAND2X1)                         0.07       9.28 f
+  u_avg/add_168/U1176/Y (AOI21X1)                         0.18       9.46 r
+  u_avg/add_168/U1159/Y (OAI21X1)                         0.10       9.55 f
+  u_avg/add_168/U1190/Y (AOI21X1)                         0.15       9.70 r
+  u_avg/add_168/U1206/Y (CLKINVX1)                        0.07       9.77 f
+  u_avg/add_168/U1205/Y (NAND2XL)                         0.09       9.86 r
+  u_avg/add_168/U1465/Y (NAND2X1)                         0.08       9.94 f
+  u_avg/add_168/U1442/Y (AOI21X1)                         0.15      10.10 r
+  u_avg/add_168/U1144/Y (NOR2X1)                          0.09      10.18 f
+  u_avg/add_168/U1923/Y (NAND2X1)                         0.10      10.28 r
+  u_avg/add_168/U2040/Y (NOR2X1)                          0.06      10.34 f
+  u_avg/add_168/U1492/Y (XOR2XL)                          0.12      10.46 f
+  u_avg/add_168/SUM[131] (AVG_DW01_add_1)                 0.00      10.46 f
+  u_avg/sum_d[131] (AVG)                                  0.00      10.46 f
+  U2759/Y (AO22X1)                                        0.31      10.76 f
+  share_reg_reg[131]/D (DFFSRX1)                          0.00      10.76 f
+  data arrival time                                                 10.76
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.10      10.90
+  share_reg_reg[131]/CK (DFFSRX1)                         0.00      10.90 r
+  library setup time                                     -0.13      10.77
+  data required time                                                10.77
+  --------------------------------------------------------------------------
+  data required time                                                10.77
+  data arrival time                                                -10.76
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

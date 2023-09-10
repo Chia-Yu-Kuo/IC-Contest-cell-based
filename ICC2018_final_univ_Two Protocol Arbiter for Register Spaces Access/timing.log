@@ -1,0 +1,62 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TPA
+Version: O-2018.06
+Date   : Tue May  2 14:18:40 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: cfg_addr[1]
+              (input port clocked by clk)
+  Endpoint: cfg_rdata[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TPA                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  cfg_addr[1] (in)                         0.07       5.57 f
+  U2531/Y (INVX12)                         0.08       5.65 r
+  U2626/Y (AND2X8)                         0.19       5.84 r
+  U2666/Y (NAND2X8)                        0.12       5.96 f
+  U1464/Y (INVX8)                          0.15       6.11 r
+  U3933/Y (INVX8)                          0.12       6.23 f
+  U2395/Y (OA22X1)                         0.50       6.72 f
+  U4365/Y (NAND4BX2)                       0.20       6.93 r
+  U554/Y (NOR2BX4)                         0.12       7.05 f
+  U3268/Y (NOR2X8)                         0.09       7.13 r
+  U1598/Y (NAND2X6)                        0.08       7.21 f
+  U3535/Y (NOR3X8)                         0.11       7.32 r
+  U3042/Y (NAND2X8)                        0.15       7.47 f
+  cfg_rdata[6] (out)                       0.00       7.47 f
+  data arrival time                                   7.47
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  output external delay                   -0.50       4.90
+  data required time                                  4.90
+  -----------------------------------------------------------
+  data required time                                  4.90
+  data arrival time                                  -7.47
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.57
+
+
+1

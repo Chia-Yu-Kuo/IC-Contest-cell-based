@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : GPSDC
+Version: O-2018.06
+Date   : Sat Apr 29 20:38:36 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/CBDK/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                         6346
+Number of nets:                         35324
+Number of cells:                        27489
+Number of combinational cells:          26621
+Number of sequential cells:               838
+Number of macros/black boxes:               0
+Number of buf/inv:                       5904
+Number of references:                     140
+
+Combinational area:             266868.620900
+Buf/Inv area:                    29207.161536
+Noncombinational area:           25990.588467
+Macro/Black Box area:                0.000000
+Net Interconnect area:         3148008.993073
+
+Total cell area:                292859.209367
+Total area:                    3440868.202440
+1

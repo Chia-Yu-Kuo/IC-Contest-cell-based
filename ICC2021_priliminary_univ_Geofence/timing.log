@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : geofence
+Version: O-2018.06
+Date   : Sat Feb 25 19:21:27 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: sort_index_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: matrix_y_reg[6][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  geofence           tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  sort_index_reg[0]/CK (DFFRX1)                           0.00       0.50 r
+  sort_index_reg[0]/Q (DFFRX1)                            0.57       1.07 f
+  U1145/Y (CLKBUFX3)                                      0.73       1.80 f
+  U1262/Y (INVX3)                                         0.53       2.33 r
+  U1137/Y (NOR2X1)                                        0.37       2.70 f
+  U1109/Y (AOI211X1)                                      0.89       3.59 r
+  U1268/Y (CLKINVX1)                                      0.78       4.37 f
+  U1813/Y (AND2X1)                                        0.49       4.86 f
+  U1320/Y (AND2X2)                                        0.23       5.09 f
+  U1319/Y (CLKBUFX3)                                      0.80       5.89 f
+  U1855/Y (AOI222XL)                                      0.85       6.73 r
+  U1856/Y (NAND3X1)                                       0.54       7.28 f
+  sub_28_2/A[0] (geofence_DW01_sub_8)                     0.00       7.28 f
+  sub_28_2/U1/Y (CLKINVX1)                                0.24       7.52 r
+  sub_28_2/U3/Y (NAND2X1)                                 0.15       7.66 f
+  sub_28_2/U2_1/CO (ADDFXL)                               0.56       8.22 f
+  sub_28_2/U2_2/CO (ADDFXL)                               0.53       8.75 f
+  sub_28_2/U2_3/CO (ADDFXL)                               0.53       9.27 f
+  sub_28_2/U2_4/CO (ADDFXL)                               0.53       9.80 f
+  sub_28_2/U2_5/CO (ADDFXL)                               0.53      10.33 f
+  sub_28_2/U2_6/CO (ADDFXL)                               0.53      10.86 f
+  sub_28_2/U2_7/CO (ADDFXL)                               0.53      11.38 f
+  sub_28_2/U2_8/CO (ADDFXL)                               0.53      11.91 f
+  sub_28_2/U2_9/S (ADDFXL)                                0.40      12.32 f
+  sub_28_2/DIFF[9] (geofence_DW01_sub_8)                  0.00      12.32 f
+  U1333/Y (AOI222XL)                                      0.54      12.86 r
+  U1331/Y (NAND2X1)                                       0.43      13.29 f
+  mult_32/a[9] (geofence_DW_mult_tc_0)                    0.00      13.29 f
+  mult_32/U446/Y (XOR2X1)                                 0.30      13.60 r
+  mult_32/U291/Y (NAND2X1)                                0.17      13.76 f
+  mult_32/U290/Y (CLKBUFX3)                               0.59      14.35 f
+  mult_32/U400/Y (OAI22XL)                                0.51      14.86 r
+  mult_32/U49/S (ADDHXL)                                  0.68      15.54 r
+  mult_32/U47/S (CMPR42X1)                                0.89      16.43 f
+  mult_32/U264/CO (ADDFX2)                                0.45      16.88 f
+  mult_32/U14/CO (ADDFXL)                                 0.49      17.37 f
+  mult_32/U13/CO (ADDFXL)                                 0.53      17.90 f
+  mult_32/U12/CO (ADDFXL)                                 0.53      18.43 f
+  mult_32/U265/CO (ADDFX2)                                0.40      18.83 f
+  mult_32/U10/CO (ADDFXL)                                 0.50      19.33 f
+  mult_32/U266/CO (ADDFX2)                                0.40      19.73 f
+  mult_32/U8/CO (ADDFXL)                                  0.49      20.23 f
+  mult_32/U7/S (ADDFXL)                                   0.74      20.97 r
+  mult_32/product[17] (geofence_DW_mult_tc_0)             0.00      20.97 r
+  r521/B[17] (geofence_DW_cmp_0)                          0.00      20.97 r
+  r521/U201/Y (CLKINVX1)                                  0.40      21.36 f
+  r521/U261/Y (OAI222XL)                                  0.83      22.19 r
+  r521/U260/Y (OAI222XL)                                  0.68      22.87 f
+  r521/U199/Y (OAI222X1)                                  0.61      23.48 r
+  r521/U259/Y (OAI222XL)                                  0.42      23.91 f
+  r521/U220/Y (NAND2X1)                                   0.25      24.16 r
+  r521/GE_LT_GT_LE (geofence_DW_cmp_0)                    0.00      24.16 r
+  U1700/Y (CLKINVX1)                                      0.24      24.40 f
+  U1261/Y (NOR2X2)                                        0.45      24.85 r
+  U1228/Y (CLKINVX1)                                      0.53      25.38 f
+  U1705/Y (OAI31XL)                                       0.62      26.00 r
+  U1704/Y (CLKINVX1)                                      0.67      26.67 f
+  U1313/Y (CLKBUFX3)                                      0.91      27.58 f
+  U1224/Y (NOR2X1)                                        0.53      28.11 r
+  U1204/Y (NAND2BX1)                                      0.61      28.72 f
+  U1203/Y (CLKINVX1)                                      0.29      29.02 r
+  U1202/Y (INVX3)                                         0.36      29.38 f
+  U1473/Y (OAI221XL)                                      0.49      29.87 r
+  matrix_y_reg[6][2]/D (DFFRX1)                           0.00      29.87 r
+  data arrival time                                                 29.87
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.50      30.50
+  clock uncertainty                                      -0.10      30.40
+  matrix_y_reg[6][2]/CK (DFFRX1)                          0.00      30.40 r
+  library setup time                                     -0.30      30.10
+  data required time                                                30.10
+  --------------------------------------------------------------------------
+  data required time                                                30.10
+  data arrival time                                                -29.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+1

@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : JAM
+Version: O-2018.06
+Date   : Tue Mar 28 18:35:25 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: up_w1_reg[2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: J[2] (output port clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  JAM                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  up_w1_reg[2]/CK (DFFSX1)                 0.00       0.50 r
+  up_w1_reg[2]/QN (DFFSX1)                 0.65       1.15 r
+  U527/Y (NAND2X2)                         0.29       1.44 f
+  U567/Y (NOR2X1)                          0.83       2.27 r
+  U677/Y (NAND2X2)                         0.55       2.82 f
+  U652/Y (CLKINVX1)                        0.53       3.34 r
+  U564/Y (AOI2BB1X2)                       0.26       3.60 f
+  U561/Y (NOR2XL)                          0.38       3.98 r
+  U563/Y (OR2X1)                           0.25       4.24 r
+  U565/Y (AOI221X1)                        0.14       4.38 f
+  U559/Y (NAND2X1)                         0.29       4.67 r
+  U558/Y (BUFX12)                          0.70       5.37 r
+  J[2] (out)                               0.00       5.37 r
+  data arrival time                                   5.37
+
+  clock CLK (fall edge)                    5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  output external delay                    0.00       5.40
+  data required time                                  5.40
+  -----------------------------------------------------------
+  data required time                                  5.40
+  data arrival time                                  -5.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+1

@@ -1,0 +1,128 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RFILE
+Version: O-2018.06
+Date   : Tue May  2 13:26:00 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: st_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: div2_y/dand3_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  st_reg[1]/CK (DFFRX1)                                   0.00       1.00 r
+  st_reg[1]/Q (DFFRX1)                                    0.58       1.58 f
+  U120/Y (NAND3BX1)                                       0.14       1.72 r
+  U173/Y (NOR2X1)                                         0.06       1.78 f
+  U172/Y (CLKBUFX3)                                       0.36       2.15 f
+  div2_y/load (divider_3stage_26_18_to_9bit_signed_1)     0.00       2.15 f
+  div2_y/U154/Y (CLKINVX1)                                0.13       2.28 r
+  div2_y/U27/Y (CLKBUFX2)                                 0.23       2.51 r
+  div2_y/U187/Y (NOR2BX1)                                 0.10       2.61 f
+  div2_y/U24/Y (CLKBUFX2)                                 0.24       2.85 f
+  div2_y/U16/Y (AOI22XL)                                  0.27       3.12 r
+  div2_y/U17/Y (OAI21XL)                                  0.14       3.26 f
+  div2_y/sub_363/A[1] (divider_3stage_26_18_to_9bit_signed_1_DW01_sub_3)
+                                                          0.00       3.26 f
+  div2_y/sub_363/U2_1/CO (ADDFX1)                         0.38       3.64 f
+  div2_y/sub_363/U2_2/CO (ADDFXL)                         0.37       4.01 f
+  div2_y/sub_363/U2_3/CO (ADDFXL)                         0.38       4.38 f
+  div2_y/sub_363/U2_4/CO (ADDFXL)                         0.38       4.76 f
+  div2_y/sub_363/U2_5/CO (ADDFXL)                         0.38       5.13 f
+  div2_y/sub_363/U2_6/CO (ADDFXL)                         0.38       5.51 f
+  div2_y/sub_363/U2_7/CO (ADDFXL)                         0.39       5.90 f
+  div2_y/sub_363/U2_8/CO (ADDFHX2)                        0.21       6.11 f
+  div2_y/sub_363/U2_9/CO (ADDFXL)                         0.34       6.45 f
+  div2_y/sub_363/U2_10/CO (ADDFHX1)                       0.25       6.70 f
+  div2_y/sub_363/U2_11/CO (ADDFXL)                        0.38       7.08 f
+  div2_y/sub_363/U2_12/CO (ADDFHX2)                       0.21       7.29 f
+  div2_y/sub_363/U2_13/CO (ADDFXL)                        0.34       7.63 f
+  div2_y/sub_363/U2_14/CO (ADDFHX1)                       0.25       7.88 f
+  div2_y/sub_363/U2_15/CO (ADDFXL)                        0.36       8.24 f
+  div2_y/sub_363/U2_16/CO (ADDFXL)                        0.39       8.63 f
+  div2_y/sub_363/U2_17/CO (ADDFHX2)                       0.21       8.84 f
+  div2_y/sub_363/U2_18/CO (ADDFXL)                        0.34       9.18 f
+  div2_y/sub_363/U2_19/CO (ADDFHX1)                       0.25       9.43 f
+  div2_y/sub_363/U2_20/CO (ADDFXL)                        0.36       9.79 f
+  div2_y/sub_363/U2_21/CO (ADDFXL)                        0.39      10.18 f
+  div2_y/sub_363/U2_22/CO (ADDFHX2)                       0.21      10.39 f
+  div2_y/sub_363/U2_23/CO (ADDFX2)                        0.29      10.69 f
+  div2_y/sub_363/U5/Y (NAND2XL)                           0.10      10.79 r
+  div2_y/sub_363/U2/Y (NAND3XL)                           0.11      10.90 f
+  div2_y/sub_363/U2_25/Y (XOR3X1)                         0.20      11.10 f
+  div2_y/sub_363/DIFF[25] (divider_3stage_26_18_to_9bit_signed_1_DW01_sub_3)
+                                                          0.00      11.10 f
+  div2_y/U29/Y (AO22X1)                                   0.38      11.49 f
+  div2_y/r337/A[25] (divider_3stage_26_18_to_9bit_signed_1_DW_cmp_1)
+                                                          0.00      11.49 f
+  div2_y/r337/U170/Y (AOI21X1)                            0.15      11.64 r
+  div2_y/r337/U141/Y (CLKINVX1)                           0.07      11.70 f
+  div2_y/r337/U131/Y (OAI21XL)                            0.17      11.87 r
+  div2_y/r337/U130/Y (OAI31XL)                            0.14      12.02 f
+  div2_y/r337/GE_LT_GT_LE (divider_3stage_26_18_to_9bit_signed_1_DW_cmp_1)
+                                                          0.00      12.02 f
+  div2_y/U152/Y (CLKBUFX3)                                0.26      12.27 f
+  div2_y/U4/Y (AO22X2)                                    0.36      12.63 f
+  div2_y/r341/A[0] (divider_3stage_26_18_to_9bit_signed_1_DW01_sub_1)
+                                                          0.00      12.63 f
+  div2_y/r341/U3/Y (CLKINVX1)                             0.06      12.69 r
+  div2_y/r341/U8/Y (NAND2X1)                              0.06      12.74 f
+  div2_y/r341/U2_1/CO (ADDFXL)                            0.38      13.12 f
+  div2_y/r341/U2_2/CO (ADDFXL)                            0.38      13.50 f
+  div2_y/r341/U2_3/CO (ADDFXL)                            0.38      13.88 f
+  div2_y/r341/U2_4/CO (ADDFXL)                            0.38      14.25 f
+  div2_y/r341/U2_5/CO (ADDFXL)                            0.39      14.64 f
+  div2_y/r341/U2_6/CO (ADDFHX2)                           0.21      14.85 f
+  div2_y/r341/U2_7/CO (ADDFXL)                            0.34      15.20 f
+  div2_y/r341/U2_8/CO (ADDFHX1)                           0.25      15.44 f
+  div2_y/r341/U2_9/CO (ADDFXL)                            0.38      15.82 f
+  div2_y/r341/U2_10/CO (ADDFHX2)                          0.21      16.03 f
+  div2_y/r341/U2_11/CO (ADDFXL)                           0.34      16.37 f
+  div2_y/r341/U2_12/CO (ADDFHX1)                          0.25      16.62 f
+  div2_y/r341/U2_13/CO (ADDFXL)                           0.36      16.98 f
+  div2_y/r341/U2_14/CO (ADDFXL)                           0.39      17.37 f
+  div2_y/r341/U2_15/CO (ADDFHX2)                          0.21      17.58 f
+  div2_y/r341/U2_16/CO (ADDFXL)                           0.34      17.92 f
+  div2_y/r341/U2_17/CO (ADDFHX1)                          0.25      18.17 f
+  div2_y/r341/U2_18/CO (ADDFXL)                           0.36      18.53 f
+  div2_y/r341/U2_19/CO (ADDFXL)                           0.39      18.92 f
+  div2_y/r341/U2_20/CO (ADDFHX2)                          0.21      19.13 f
+  div2_y/r341/U2_21/CO (ADDFXL)                           0.34      19.47 f
+  div2_y/r341/U2_22/CO (ADDFHX1)                          0.25      19.72 f
+  div2_y/r341/U2_23/CO (ADDFXL)                           0.37      20.09 f
+  div2_y/r341/U5/Y (CLKINVX1)                             0.07      20.16 r
+  div2_y/r341/U32/Y (NAND2X1)                             0.06      20.22 f
+  div2_y/r341/U31/Y (XNOR2X1)                             0.14      20.36 f
+  div2_y/r341/DIFF[25] (divider_3stage_26_18_to_9bit_signed_1_DW01_sub_1)
+                                                          0.00      20.36 f
+  div2_y/U204/Y (AOI22X1)                                 0.16      20.51 r
+  div2_y/U203/Y (OAI21XL)                                 0.08      20.60 f
+  div2_y/dand3_reg[25]/D (DFFX1)                          0.00      20.60 f
+  data arrival time                                                 20.60
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             1.00      21.00
+  clock uncertainty                                      -0.10      20.90
+  div2_y/dand3_reg[25]/CK (DFFX1)                         0.00      20.90 r
+  library setup time                                     -0.28      20.62
+  data required time                                                20.62
+  --------------------------------------------------------------------------
+  data required time                                                20.62
+  data arrival time                                                -20.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1

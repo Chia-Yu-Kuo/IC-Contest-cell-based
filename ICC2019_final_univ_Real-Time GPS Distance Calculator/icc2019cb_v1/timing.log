@@ -1,0 +1,817 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : GPSDC
+Version: O-2018.06
+Date   : Sat Apr 29 17:38:20 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: x1_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  GPSDC              tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  x1_reg_reg[0]/CK (DFFRX4)                               0.00       1.00 r
+  x1_reg_reg[0]/Q (DFFRX4)                                0.53       1.53 f
+  r626/A[0] (GPSDC_DW01_sub_10)                           0.00       1.53 f
+  r626/U40/Y (NOR2X8)                                     0.10       1.63 r
+  r626/U167/Y (INVX4)                                     0.11       1.74 f
+  r626/U218/Y (NAND2X6)                                   0.11       1.85 r
+  r626/U97/Y (NAND3X8)                                    0.11       1.95 f
+  r626/U145/Y (NAND2X2)                                   0.13       2.09 r
+  r626/U224/Y (NAND3X4)                                   0.11       2.20 f
+  r626/U123/CO (ADDFHX4)                                  0.27       2.47 f
+  r626/U119/Y (NAND2X4)                                   0.13       2.60 r
+  r626/U121/Y (NAND3X8)                                   0.08       2.68 f
+  r626/U127/CO (ADDFHX4)                                  0.27       2.95 f
+  r626/U104/Y (NAND2X6)                                   0.10       3.05 r
+  r626/U91/Y (NAND3X6)                                    0.09       3.14 f
+  r626/U134/CO (ADDFHX4)                                  0.28       3.42 f
+  r626/U130/Y (NAND2X8)                                   0.11       3.52 r
+  r626/U132/Y (NAND3X8)                                   0.08       3.60 f
+  r626/U135/CO (ADDFHX4)                                  0.24       3.84 f
+  r626/U136/Y (NAND2X4)                                   0.11       3.95 r
+  r626/U93/Y (NAND2X6)                                    0.08       4.03 f
+  r626/U90/Y (INVX4)                                      0.06       4.09 r
+  r626/U92/Y (NAND2X2)                                    0.08       4.18 f
+  r626/U176/CO (ADDFHX4)                                  0.22       4.40 f
+  r626/U236/CO (ADDFHX4)                                  0.20       4.60 f
+  r626/U187/CO (ADDFHX4)                                  0.25       4.85 f
+  r626/U185/Y (NAND2X4)                                   0.13       4.98 r
+  r626/U98/Y (NAND3X8)                                    0.13       5.12 f
+  r626/U96/Y (NAND2X8)                                    0.09       5.21 r
+  r626/U95/Y (NAND2X6)                                    0.08       5.29 f
+  r626/U99/Y (INVX6)                                      0.07       5.36 r
+  r626/U114/Y (NAND2X8)                                   0.08       5.44 f
+  r626/U162/Y (NAND2X4)                                   0.12       5.56 r
+  r626/U215/Y (NAND3X8)                                   0.09       5.65 f
+  r626/U216/CO (ADDFHX4)                                  0.26       5.91 f
+  r626/U211/Y (NAND2X4)                                   0.12       6.03 r
+  r626/U103/Y (NAND3X6)                                   0.11       6.14 f
+  r626/U234/CO (ADDFHX4)                                  0.26       6.40 f
+  r626/U232/Y (NAND2X4)                                   0.12       6.51 r
+  r626/U81/Y (NAND3X6)                                    0.11       6.62 f
+  r626/U235/CO (ADDFHX4)                                  0.26       6.88 f
+  r626/U200/Y (NAND2X4)                                   0.13       7.01 r
+  r626/U202/Y (NAND3X8)                                   0.10       7.10 f
+  r626/U203/CO (ADDFHX4)                                  0.26       7.37 f
+  r626/U180/Y (NAND2X4)                                   0.13       7.50 r
+  r626/U86/Y (NAND3X8)                                    0.09       7.59 f
+  r626/U182/CO (ADDFHX4)                                  0.21       7.79 f
+  r626/U196/CO (ADDFHX4)                                  0.25       8.04 f
+  r626/U193/Y (NAND2X4)                                   0.13       8.17 r
+  r626/U195/Y (NAND3X8)                                   0.15       8.32 f
+  r626/U110/Y (NAND2X8)                                   0.10       8.42 r
+  r626/U112/Y (NAND3X8)                                   0.12       8.54 f
+  r626/U226/Y (NAND2X4)                                   0.13       8.67 r
+  r626/U228/Y (NAND3X8)                                   0.10       8.76 f
+  r626/U229/CO (ADDFHX4)                                  0.21       8.97 f
+  r626/U237/CO (ADDFHX4)                                  0.20       9.17 f
+  r626/U240/CO (ADDFHX4)                                  0.29       9.47 f
+  r626/U189/Y (CLKINVX8)                                  0.07       9.54 r
+  r626/U94/Y (NAND2X4)                                    0.06       9.59 f
+  r626/U164/Y (NAND2X1)                                   0.37       9.97 r
+  r626/DIFF[33] (GPSDC_DW01_sub_10)                       0.00       9.97 r
+  div_301/b[33] (GPSDC_DW_div_uns_2)                      0.00       9.97 r
+  div_301/U15908/Y (CLKINVX1)                             0.31      10.27 f
+  div_301/U2018/Y (BUFX4)                                 0.19      10.46 f
+  div_301/U11390/Y (CLKBUFX3)                             0.66      11.12 f
+  div_301/u_div/u_add_B3/B[33] (GPSDC_DW01_add_161)       0.00      11.12 f
+  div_301/u_div/u_add_B3/U508/Y (NAND2XL)                 0.72      11.84 r
+  div_301/u_div/u_add_B3/U407/Y (NAND2X2)                 0.24      12.08 f
+  div_301/u_div/u_add_B3/U406/Y (CLKINVX4)                0.12      12.20 r
+  div_301/u_div/u_add_B3/U408/Y (OA21X4)                  0.15      12.35 r
+  div_301/u_div/u_add_B3/U503/Y (AND2X2)                  0.23      12.58 r
+  div_301/u_div/u_add_B3/U482/Y (OAI2BB1X2)               0.19      12.77 r
+  div_301/u_div/u_add_B3/U713/Y (CLKINVX1)                0.21      12.98 f
+  div_301/u_div/u_add_B3/U712/Y (AO21X1)                  0.36      13.34 f
+  div_301/u_div/u_add_B3/U497/Y (OA21X2)                  0.25      13.59 f
+  div_301/u_div/u_add_B3/SUM[38] (GPSDC_DW01_add_161)     0.00      13.59 f
+  div_301/U1999/Y (CLKINVX8)                              0.08      13.67 r
+  div_301/U1821/Y (INVX1)                                 0.10      13.78 f
+  div_301/u_div/u_add_PartRem_27_3/B[38] (GPSDC_DW01_add_166)
+                                                          0.00      13.78 f
+  div_301/u_div/u_add_PartRem_27_3/U115/Y (NAND4X2)       0.17      13.94 r
+  div_301/u_div/u_add_PartRem_27_3/U108/Y (NOR3X2)        0.13      14.07 f
+  div_301/u_div/u_add_PartRem_27_3/CO (GPSDC_DW01_add_166)
+                                                          0.00      14.07 f
+  div_301/U10869/Y (MXI2X4)                               0.24      14.31 r
+  div_301/U15057/Y (CLKINVX1)                             0.37      14.68 f
+  div_301/U11932/Y (OA22X4)                               0.36      15.04 f
+  div_301/U11931/Y (NAND2X8)                              0.22      15.26 r
+  div_301/u_div/u_add_PartRem_26_5/A[3] (GPSDC_DW01_add_175)
+                                                          0.00      15.26 r
+  div_301/u_div/u_add_PartRem_26_5/U151/Y (OR2XL)         0.71      15.97 r
+  div_301/u_div/u_add_PartRem_26_5/U140/Y (AOI21X1)       0.39      16.36 f
+  div_301/u_div/u_add_PartRem_26_5/U157/Y (AO22X4)        0.34      16.70 f
+  div_301/u_div/u_add_PartRem_26_5/U132/Y (NAND4BX1)      0.30      17.00 f
+  div_301/u_div/u_add_PartRem_26_5/U131/Y (OAI21XL)       0.37      17.37 r
+  div_301/u_div/u_add_PartRem_26_5/U155/Y (NAND4X2)       0.20      17.58 f
+  div_301/u_div/u_add_PartRem_26_5/U176/Y (NOR2X1)        0.26      17.83 r
+  div_301/u_div/u_add_PartRem_26_5/CO (GPSDC_DW01_add_175)
+                                                          0.00      17.83 r
+  div_301/U3236/Y (INVX2)                                 0.11      17.95 f
+  div_301/U2682/Y (NOR2X1)                                0.22      18.17 r
+  div_301/U15343/Y (NOR2X1)                               0.17      18.33 f
+  div_301/U1905/Y (NAND2X2)                               0.16      18.50 r
+  div_301/U15055/Y (INVX3)                                0.21      18.71 f
+  div_301/U4087/Y (MXI2X1)                                0.46      19.17 r
+  div_301/U1827/Y (INVX3)                                 0.51      19.67 f
+  div_301/u_div/u_add_PartRem_25_6/A[4] (GPSDC_DW01_add_183)
+                                                          0.00      19.67 f
+  div_301/u_div/u_add_PartRem_25_6/U159/Y (NAND2X1)       0.47      20.15 r
+  div_301/u_div/u_add_PartRem_25_6/U216/Y (CLKINVX1)      0.21      20.36 f
+  div_301/u_div/u_add_PartRem_25_6/U188/Y (AOI21X1)       0.51      20.87 r
+  div_301/u_div/u_add_PartRem_25_6/U165/Y (AO22X1)        0.33      21.19 r
+  div_301/u_div/u_add_PartRem_25_6/U164/Y (OAI31XL)       0.27      21.46 f
+  div_301/u_div/u_add_PartRem_25_6/U152/Y (CLKINVX4)      0.17      21.63 r
+  div_301/u_div/u_add_PartRem_25_6/U151/Y (AOI21X4)       0.10      21.73 f
+  div_301/u_div/u_add_PartRem_25_6/U153/Y (AND4X4)        0.24      21.97 f
+  div_301/u_div/u_add_PartRem_25_6/CO (GPSDC_DW01_add_183)
+                                                          0.00      21.97 f
+  div_301/U10824/Y (MXI2X4)                               0.23      22.20 r
+  div_301/U10828/Y (NAND2XL)                              0.23      22.43 f
+  div_301/U2285/Y (BUFX4)                                 0.29      22.72 f
+  div_301/U15199/Y (INVX3)                                0.33      23.05 r
+  div_301/U4090/Y (NAND2XL)                               0.23      23.28 f
+  div_301/U1269/Y (NAND4X1)                               0.32      23.60 r
+  div_301/U411/Y (MXI2X4)                                 0.22      23.82 f
+  div_301/U2391/Y (INVX12)                                0.17      23.99 r
+  div_301/u_div/u_add_PartRem_24_5/A[3] (GPSDC_DW01_add_189)
+                                                          0.00      23.99 r
+  div_301/u_div/u_add_PartRem_24_5/U231/Y (OR2XL)         0.68      24.66 r
+  div_301/u_div/u_add_PartRem_24_5/U185/Y (AOI21X1)       0.39      25.05 f
+  div_301/u_div/u_add_PartRem_24_5/U237/Y (AO22X4)        0.36      25.40 f
+  div_301/u_div/u_add_PartRem_24_5/U175/Y (OAI31XL)       0.82      26.22 r
+  div_301/u_div/u_add_PartRem_24_5/U259/Y (CLKINVX1)      0.55      26.77 f
+  div_301/u_div/u_add_PartRem_24_5/U221/Y (NAND2X2)       0.20      26.97 r
+  div_301/u_div/u_add_PartRem_24_5/U247/Y (NAND4X1)       0.20      27.17 f
+  div_301/u_div/u_add_PartRem_24_5/U182/Y (NAND4BX1)      0.35      27.52 f
+  div_301/u_div/u_add_PartRem_24_5/U181/Y (CLKINVX1)      0.16      27.68 r
+  div_301/u_div/u_add_PartRem_24_5/CO (GPSDC_DW01_add_189)
+                                                          0.00      27.68 r
+  div_301/U1889/Y (CLKINVX1)                              0.13      27.81 f
+  div_301/U14603/Y (NOR2X1)                               0.23      28.04 r
+  div_301/U14602/Y (NOR2X1)                               0.23      28.26 f
+  div_301/U181/Y (NAND2X6)                                0.15      28.41 r
+  div_301/U180/Y (INVX12)                                 0.12      28.53 f
+  div_301/U1483/Y (MXI2X1)                                0.50      29.03 r
+  div_301/U286/Y (CLKINVX8)                               0.45      29.48 f
+  div_301/u_div/u_add_PartRem_23_4/A[12] (GPSDC_DW01_add_195)
+                                                          0.00      29.48 f
+  div_301/u_div/u_add_PartRem_23_4/U226/Y (NAND2X1)       0.45      29.93 r
+  div_301/u_div/u_add_PartRem_23_4/U262/Y (CLKINVX1)      0.24      30.17 f
+  div_301/u_div/u_add_PartRem_23_4/U201/Y (AO21X4)        0.26      30.43 f
+  div_301/u_div/u_add_PartRem_23_4/U202/Y (INVX1)         0.16      30.59 r
+  div_301/u_div/u_add_PartRem_23_4/U200/Y (OAI2BB2X4)     0.23      30.82 r
+  div_301/u_div/u_add_PartRem_23_4/U186/Y (OAI32X2)       0.16      30.98 f
+  div_301/u_div/u_add_PartRem_23_4/U268/Y (CLKINVX1)      0.23      31.20 r
+  div_301/u_div/u_add_PartRem_23_4/U210/Y (NAND2X2)       0.11      31.31 f
+  div_301/u_div/u_add_PartRem_23_4/U208/Y (NAND4X1)       0.22      31.54 r
+  div_301/u_div/u_add_PartRem_23_4/U238/Y (OR2X2)         0.26      31.80 r
+  div_301/u_div/u_add_PartRem_23_4/U197/Y (NOR3X8)        0.15      31.94 f
+  div_301/u_div/u_add_PartRem_23_4/CO (GPSDC_DW01_add_195)
+                                                          0.00      31.94 f
+  div_301/U208/Y (INVX8)                                  0.08      32.02 r
+  div_301/U205/Y (NAND2X8)                                0.07      32.09 f
+  div_301/U207/Y (NAND2X8)                                0.09      32.18 r
+  div_301/U209/Y (INVX16)                                 0.06      32.24 f
+  div_301/U213/Y (NAND2X2)                                0.12      32.36 r
+  div_301/U149/Y (CLKINVX2)                               0.20      32.56 f
+  div_301/U1910/Y (AOI22X2)                               0.29      32.85 r
+  div_301/U2/Y (NAND2X6)                                  0.13      32.98 f
+  div_301/U101/Y (INVX8)                                  0.15      33.12 r
+  div_301/U88/Y (NAND2X2)                                 0.10      33.22 f
+  div_301/U1721/Y (BUFX2)                                 0.40      33.62 f
+  div_301/U14051/Y (CLKINVX1)                             0.51      34.13 r
+  div_301/U11858/Y (NAND2XL)                              0.32      34.45 f
+  div_301/U11722/Y (NAND4X2)                              0.24      34.69 r
+  div_301/U11720/Y (OR2X8)                                0.31      35.00 r
+  div_301/u_div/u_add_PartRem_22_4/A[7] (GPSDC_DW01_add_202)
+                                                          0.00      35.00 r
+  div_301/u_div/u_add_PartRem_22_4/U246/Y (OR2XL)         0.71      35.70 r
+  div_301/u_div/u_add_PartRem_22_4/U264/Y (AOI21X1)       0.42      36.13 f
+  div_301/u_div/u_add_PartRem_22_4/U216/Y (AO22X1)        0.46      36.59 f
+  div_301/u_div/u_add_PartRem_22_4/U215/Y (OAI31X1)       0.38      36.97 r
+  div_301/u_div/u_add_PartRem_22_4/U309/Y (CLKINVX1)      0.47      37.44 f
+  div_301/u_div/u_add_PartRem_22_4/U238/Y (AOI21X2)       0.29      37.73 r
+  div_301/u_div/u_add_PartRem_22_4/U236/Y (AND3X8)        0.24      37.97 r
+  div_301/u_div/u_add_PartRem_22_4/CO (GPSDC_DW01_add_202)
+                                                          0.00      37.97 r
+  div_301/U14929/Y (CLKINVX1)                             0.23      38.21 f
+  div_301/U2616/Y (OR2X2)                                 0.39      38.60 f
+  div_301/U14063/Y (NOR2X1)                               0.27      38.87 r
+  div_301/U3784/Y (NOR2X2)                                0.18      39.04 f
+  div_301/U89/Y (NAND2X6)                                 0.11      39.15 r
+  div_301/U105/Y (INVX8)                                  0.11      39.27 f
+  div_301/U2354/Y (OR2X1)                                 0.32      39.58 f
+  div_301/U2289/Y (INVX3)                                 0.23      39.82 r
+  div_301/U13737/Y (INVX3)                                0.23      40.05 f
+  div_301/U10612/Y (NOR2XL)                               0.58      40.63 r
+  div_301/U10610/Y (OR4X8)                                0.44      41.07 r
+  div_301/u_div/u_add_PartRem_21_7/A[15] (GPSDC_DW01_add_212)
+                                                          0.00      41.07 r
+  div_301/u_div/u_add_PartRem_21_7/U276/Y (OR2XL)         0.70      41.77 r
+  div_301/u_div/u_add_PartRem_21_7/U324/Y (AND2XL)        0.64      42.41 r
+  div_301/u_div/u_add_PartRem_21_7/U267/Y (NAND2BX2)      0.15      42.56 f
+  div_301/u_div/u_add_PartRem_21_7/U367/Y (CLKINVX1)      0.19      42.75 r
+  div_301/u_div/u_add_PartRem_21_7/U391/Y (AO21X1)        0.37      43.12 r
+  div_301/u_div/u_add_PartRem_21_7/U390/Y (CLKINVX1)      0.18      43.30 f
+  div_301/u_div/u_add_PartRem_21_7/U258/Y (OAI2BB2X1)     0.55      43.85 f
+  div_301/u_div/u_add_PartRem_21_7/U259/Y (NOR3X1)        0.40      44.25 r
+  div_301/u_div/u_add_PartRem_21_7/U243/Y (OAI2BB1X4)     0.22      44.48 r
+  div_301/u_div/u_add_PartRem_21_7/U264/Y (INVX3)         0.08      44.56 f
+  div_301/u_div/u_add_PartRem_21_7/U266/Y (NOR2BX4)       0.10      44.65 r
+  div_301/u_div/u_add_PartRem_21_7/CO (GPSDC_DW01_add_212)
+                                                          0.00      44.65 r
+  div_301/U14447/Y (CLKINVX1)                             0.12      44.77 f
+  div_301/U1912/Y (NOR2X1)                                0.22      44.99 r
+  div_301/U2527/Y (NOR2X1)                                0.21      45.20 f
+  div_301/U119/Y (NAND2X6)                                0.14      45.35 r
+  div_301/U118/Y (INVX16)                                 0.09      45.43 f
+  div_301/U7543/Y (NAND2XL)                               0.34      45.78 r
+  div_301/U3557/Y (INVX4)                                 0.44      46.22 f
+  div_301/U9828/Y (NAND2XL)                               0.38      46.60 r
+  div_301/U1104/Y (NAND4X1)                               0.30      46.90 f
+  div_301/U9723/Y (OR4X8)                                 0.50      47.40 f
+  div_301/u_div/u_add_PartRem_20_7/A[14] (GPSDC_DW01_add_219)
+                                                          0.00      47.40 f
+  div_301/u_div/u_add_PartRem_20_7/U328/Y (NAND2XL)       0.64      48.04 r
+  div_301/u_div/u_add_PartRem_20_7/U415/Y (CLKINVX1)      0.25      48.29 f
+  div_301/u_div/u_add_PartRem_20_7/U284/Y (AO21X1)        0.42      48.72 f
+  div_301/u_div/u_add_PartRem_20_7/U283/Y (OA22X1)        0.48      49.19 f
+  div_301/u_div/u_add_PartRem_20_7/U453/Y (AO21X1)        0.46      49.65 f
+  div_301/u_div/u_add_PartRem_20_7/U452/Y (CLKINVX1)      0.18      49.83 r
+  div_301/u_div/u_add_PartRem_20_7/U378/Y (OAI2BB2X4)     0.28      50.11 r
+  div_301/u_div/u_add_PartRem_20_7/U445/Y (CLKINVX1)      0.27      50.38 f
+  div_301/u_div/u_add_PartRem_20_7/U362/Y (NAND2X2)       0.16      50.53 r
+  div_301/u_div/u_add_PartRem_20_7/U317/Y (NOR2X1)        0.11      50.65 f
+  div_301/u_div/u_add_PartRem_20_7/U318/Y (AOI21X1)       0.24      50.88 r
+  div_301/u_div/u_add_PartRem_20_7/U293/Y (NOR2X1)        0.15      51.03 f
+  div_301/u_div/u_add_PartRem_20_7/CO (GPSDC_DW01_add_219)
+                                                          0.00      51.03 f
+  div_301/U14061/Y (CLKINVX1)                             0.17      51.21 r
+  div_301/U127/Y (NOR2X4)                                 0.10      51.30 f
+  div_301/U120/Y (NOR2X2)                                 0.21      51.51 r
+  div_301/U2757/Y (NAND2X6)                               0.13      51.64 f
+  div_301/U184/Y (INVX12)                                 0.11      51.75 r
+  div_301/U2284/Y (AND2X2)                                0.21      51.96 r
+  div_301/U13730/Y (CLKBUFX3)                             0.47      52.44 r
+  div_301/U11768/Y (NAND2XL)                              0.25      52.68 f
+  div_301/U898/Y (NAND4X1)                                0.29      52.98 r
+  div_301/U1971/Y (OR4X6)                                 0.42      53.40 r
+  div_301/u_div/u_add_PartRem_19_3/A[6] (GPSDC_DW01_add_222)
+                                                          0.00      53.40 r
+  div_301/u_div/u_add_PartRem_19_3/U388/Y (NAND2XL)       0.44      53.84 f
+  div_301/u_div/u_add_PartRem_19_3/U578/Y (CLKINVX1)      0.22      54.06 r
+  div_301/u_div/u_add_PartRem_19_3/U474/Y (OAI2BB1XL)     0.41      54.47 r
+  div_301/u_div/u_add_PartRem_19_3/U423/Y (CLKINVX4)      0.20      54.67 f
+  div_301/u_div/u_add_PartRem_19_3/U422/Y (AO22X2)        0.36      55.03 f
+  div_301/u_div/u_add_PartRem_19_3/U389/Y (OAI31X2)       0.21      55.24 r
+  div_301/u_div/u_add_PartRem_19_3/U574/Y (CLKINVX1)      0.44      55.68 f
+  div_301/u_div/u_add_PartRem_19_3/U371/Y (AOI2BB2X1)     0.74      56.42 r
+  div_301/u_div/u_add_PartRem_19_3/U370/Y (INVX3)         0.47      56.89 f
+  div_301/u_div/u_add_PartRem_19_3/U332/Y (NOR3X2)        0.24      57.13 r
+  div_301/u_div/u_add_PartRem_19_3/U345/Y (NOR2X1)        0.20      57.33 f
+  div_301/u_div/u_add_PartRem_19_3/U386/Y (NOR2X6)        0.11      57.44 r
+  div_301/u_div/u_add_PartRem_19_3/CO (GPSDC_DW01_add_222)
+                                                          0.00      57.44 r
+  div_301/U1914/Y (AOI22X2)                               0.14      57.58 f
+  div_301/U1913/Y (NAND2X2)                               0.17      57.75 r
+  div_301/U13708/Y (INVX3)                                0.22      57.97 f
+  div_301/U7537/Y (OR2XL)                                 0.34      58.31 f
+  div_301/U915/Y (CLKINVX1)                               0.22      58.54 r
+  div_301/U13735/Y (INVX3)                                0.13      58.66 f
+  div_301/U1444/Y (INVX3)                                 0.46      59.13 r
+  div_301/U3260/Y (NAND2XL)                               0.25      59.37 f
+  div_301/U11697/Y (OAI2BB1XL)                            0.40      59.77 r
+  div_301/U81/Y (OR4X6)                                   0.45      60.22 r
+  div_301/u_div/u_add_PartRem_18_5/A[6] (GPSDC_DW01_add_231)
+                                                          0.00      60.22 r
+  div_301/u_div/u_add_PartRem_18_5/U647/Y (NAND2X1)       0.30      60.52 f
+  div_301/u_div/u_add_PartRem_18_5/U543/Y (INVXL)         0.36      60.88 r
+  div_301/u_div/u_add_PartRem_18_5/U423/Y (AOI21X1)       0.26      61.14 f
+  div_301/u_div/u_add_PartRem_18_5/U401/Y (AO22X1)        0.44      61.58 f
+  div_301/u_div/u_add_PartRem_18_5/U400/Y (OAI31X1)       0.37      61.95 r
+  div_301/u_div/u_add_PartRem_18_5/U636/Y (CLKINVX1)      0.54      62.49 f
+  div_301/u_div/u_add_PartRem_18_5/U528/Y (AO22X4)        0.53      63.02 f
+  div_301/u_div/u_add_PartRem_18_5/U419/Y (NOR3X1)        0.35      63.38 r
+  div_301/u_div/u_add_PartRem_18_5/U418/Y (AOI21X1)       0.17      63.55 f
+  div_301/u_div/u_add_PartRem_18_5/U617/Y (NOR3X1)        0.29      63.84 r
+  div_301/u_div/u_add_PartRem_18_5/CO (GPSDC_DW01_add_231)
+                                                          0.00      63.84 r
+  div_301/U14611/Y (CLKINVX1)                             0.19      64.03 f
+  div_301/U14610/Y (NOR2X1)                               0.26      64.29 r
+  div_301/U3935/Y (NOR2X2)                                0.13      64.43 f
+  div_301/U1916/Y (NAND2X2)                               0.16      64.59 r
+  div_301/U524/Y (CLKINVX6)                               0.21      64.80 f
+  div_301/U2286/Y (NOR2X1)                                0.28      65.07 r
+  div_301/U13732/Y (INVX3)                                0.41      65.48 f
+  div_301/U13061/Y (INVX3)                                0.59      66.07 r
+  div_301/U4098/Y (NAND2XL)                               0.27      66.34 f
+  div_301/U15934/Y (NAND4X1)                              0.32      66.66 r
+  div_301/U11940/Y (OR2X8)                                0.33      66.98 r
+  div_301/u_div/u_add_PartRem_17_5/A[3] (GPSDC_DW01_add_238)
+                                                          0.00      66.98 r
+  div_301/u_div/u_add_PartRem_17_5/U722/Y (OR2X1)         0.44      67.42 r
+  div_301/u_div/u_add_PartRem_17_5/U487/Y (AO21X2)        0.27      67.68 r
+  div_301/u_div/u_add_PartRem_17_5/U488/Y (INVX4)         0.08      67.77 f
+  div_301/u_div/u_add_PartRem_17_5/U581/Y (AO22X4)        0.29      68.05 f
+  div_301/u_div/u_add_PartRem_17_5/U432/Y (OAI31X1)       0.56      68.62 r
+  div_301/u_div/u_add_PartRem_17_5/U448/Y (CLKINVX1)      0.53      69.14 f
+  div_301/u_div/u_add_PartRem_17_5/U453/Y (AOI2BB2X1)     0.83      69.97 r
+  div_301/u_div/u_add_PartRem_17_5/U417/Y (INVX6)         0.41      70.38 f
+  div_301/u_div/u_add_PartRem_17_5/U416/Y (OAI31X2)       0.33      70.71 r
+  div_301/u_div/u_add_PartRem_17_5/U462/Y (NOR2BX1)       0.18      70.89 f
+  div_301/u_div/u_add_PartRem_17_5/U626/Y (NOR3X1)        0.28      71.18 r
+  div_301/u_div/u_add_PartRem_17_5/CO (GPSDC_DW01_add_238)
+                                                          0.00      71.18 r
+  div_301/U13847/Y (CLKINVX1)                             0.21      71.39 f
+  div_301/U3172/Y (NOR2X2)                                0.16      71.55 r
+  div_301/U15093/Y (NOR2X1)                               0.13      71.68 f
+  div_301/U1917/Y (NAND2X2)                               0.19      71.87 r
+  div_301/U146/Y (INVX8)                                  0.14      72.01 f
+  div_301/U2273/Y (NOR2X1)                                0.48      72.49 r
+  div_301/U14099/Y (CLKBUFX3)                             0.56      73.05 r
+  div_301/U11406/Y (NAND2XL)                              0.25      73.30 f
+  div_301/U15537/Y (NAND4X1)                              0.28      73.57 r
+  div_301/U419/Y (OR4X6)                                  0.43      74.00 r
+  div_301/u_div/u_add_PartRem_16_6/A[6] (GPSDC_DW01_add_246)
+                                                          0.00      74.00 r
+  div_301/u_div/u_add_PartRem_16_6/U774/Y (NAND2X1)       0.30      74.30 f
+  div_301/u_div/u_add_PartRem_16_6/U614/Y (INVXL)         0.33      74.62 r
+  div_301/u_div/u_add_PartRem_16_6/U492/Y (AOI21X1)       0.29      74.92 f
+  div_301/u_div/u_add_PartRem_16_6/U514/Y (AO22X4)        0.29      75.21 f
+  div_301/u_div/u_add_PartRem_16_6/U623/Y (OAI31X2)       0.20      75.41 r
+  div_301/u_div/u_add_PartRem_16_6/U771/Y (CLKINVX1)      0.42      75.83 f
+  div_301/u_div/u_add_PartRem_16_6/U482/Y (AO22X1)        0.46      76.29 f
+  div_301/u_div/u_add_PartRem_16_6/U481/Y (CLKBUFX3)      0.68      76.97 f
+  div_301/u_div/u_add_PartRem_16_6/U487/Y (OAI31X1)       0.64      77.61 r
+  div_301/u_div/u_add_PartRem_16_6/U528/Y (AOI2BB2X4)     0.26      77.86 r
+  div_301/u_div/u_add_PartRem_16_6/CO (GPSDC_DW01_add_246)
+                                                          0.00      77.86 r
+  div_301/U197/Y (NAND2X6)                                0.10      77.96 f
+  div_301/U198/Y (NAND2X8)                                0.09      78.05 r
+  div_301/U199/Y (INVX12)                                 0.06      78.11 f
+  div_301/U202/Y (NAND2XL)                                0.65      78.77 r
+  div_301/U3065/Y (NOR2X2)                                0.21      78.97 f
+  div_301/U3785/Y (NOR2X2)                                0.18      79.15 r
+  div_301/U3121/Y (NAND2X2)                               0.17      79.32 f
+  div_301/U2398/Y (CLKINVX8)                              0.15      79.46 r
+  div_301/U7037/Y (AND2XL)                                0.35      79.81 r
+  div_301/U1411/Y (CLKBUFX6)                              0.66      80.47 r
+  div_301/U11409/Y (NAND2XL)                              0.27      80.75 f
+  div_301/U1126/Y (NAND4X1)                               0.32      81.07 r
+  div_301/U1125/Y (OR4X4)                                 0.52      81.58 r
+  div_301/u_div/u_add_PartRem_15_4/A[9] (GPSDC_DW01_add_251)
+                                                          0.00      81.58 r
+  div_301/u_div/u_add_PartRem_15_4/U652/Y (OR2X1)         0.46      82.05 r
+  div_301/u_div/u_add_PartRem_15_4/U542/Y (NAND2XL)       0.45      82.50 f
+  div_301/u_div/u_add_PartRem_15_4/U387/Y (AO22X4)        0.35      82.85 f
+  div_301/u_div/u_add_PartRem_15_4/U386/Y (OAI31X2)       0.20      83.05 r
+  div_301/u_div/u_add_PartRem_15_4/U651/Y (CLKINVX1)      0.36      83.41 f
+  div_301/u_div/u_add_PartRem_15_4/U413/Y (AOI2BB2X1)     0.52      83.93 r
+  div_301/u_div/u_add_PartRem_15_4/U419/Y (INVX3)         0.40      84.33 f
+  div_301/u_div/u_add_PartRem_15_4/U487/Y (OAI31X2)       0.33      84.65 r
+  div_301/u_div/u_add_PartRem_15_4/U555/Y (CLKINVX1)      0.25      84.90 f
+  div_301/u_div/u_add_PartRem_15_4/U486/Y (AOI2BB2X4)     0.30      85.20 r
+  div_301/u_div/u_add_PartRem_15_4/CO (GPSDC_DW01_add_251)
+                                                          0.00      85.20 r
+  div_301/U565/Y (MXI2X4)                                 0.31      85.51 r
+  div_301/U13736/Y (OR2X1)                                0.39      85.90 r
+  div_301/U566/Y (INVX3)                                  0.14      86.04 f
+  div_301/U1904/Y (AOI22X1)                               0.34      86.38 r
+  div_301/U6591/Y (NAND2X2)                               0.18      86.56 f
+  div_301/U13045/Y (INVX3)                                0.29      86.84 r
+  div_301/U4764/Y (NAND2XL)                               0.34      87.18 f
+  div_301/U4263/Y (CLKINVX1)                              0.29      87.48 r
+  div_301/U12163/Y (INVX3)                                0.41      87.88 f
+  div_301/U10124/Y (NAND2BXL)                             0.46      88.35 f
+  div_301/U7967/Y (NAND4X2)                               0.22      88.57 r
+  div_301/U7965/Y (OR2X8)                                 0.29      88.86 r
+  div_301/u_div/u_add_PartRem_14_4/A[19] (GPSDC_DW01_add_258)
+                                                          0.00      88.86 r
+  div_301/u_div/u_add_PartRem_14_4/U507/Y (OR2XL)         0.71      89.57 r
+  div_301/u_div/u_add_PartRem_14_4/U414/Y (AOI21X2)       0.30      89.88 f
+  div_301/u_div/u_add_PartRem_14_4/U417/Y (AO22X2)        0.39      90.27 f
+  div_301/u_div/u_add_PartRem_14_4/U617/Y (CLKINVX1)      0.24      90.51 r
+  div_301/u_div/u_add_PartRem_14_4/U444/Y (OAI2BB1X1)     0.55      91.06 r
+  div_301/u_div/u_add_PartRem_14_4/U618/Y (CLKINVX1)      0.42      91.48 f
+  div_301/u_div/u_add_PartRem_14_4/U517/Y (AO22X4)        0.29      91.76 f
+  div_301/u_div/u_add_PartRem_14_4/U516/Y (OAI31X2)       0.24      92.01 r
+  div_301/u_div/u_add_PartRem_14_4/U450/Y (OA21X2)        0.53      92.54 r
+  div_301/u_div/u_add_PartRem_14_4/CO (GPSDC_DW01_add_258)
+                                                          0.00      92.54 r
+  div_301/U6581/Y (MXI2X4)                                0.34      92.88 f
+  div_301/U2878/Y (NAND2XL)                               0.54      93.42 r
+  div_301/U12693/Y (CLKINVX1)                             0.38      93.79 f
+  div_301/U2943/Y (AOI22X2)                               0.30      94.09 r
+  div_301/U109/Y (NAND2X4)                                0.18      94.27 f
+  div_301/U108/Y (CLKINVX12)                              0.09      94.37 r
+  div_301/U2841/Y (NAND2XL)                               0.28      94.65 f
+  div_301/U4258/Y (CLKINVX1)                              0.41      95.06 r
+  div_301/U12173/Y (INVX3)                                0.37      95.43 f
+  div_301/U9775/Y (NOR2XL)                                0.60      96.04 r
+  div_301/U2528/Y (OR4X8)                                 0.41      96.44 r
+  div_301/u_div/u_add_PartRem_13_7/A[10] (GPSDC_DW01_add_268)
+                                                          0.00      96.44 r
+  div_301/u_div/u_add_PartRem_13_7/U840/Y (NAND2X1)       0.28      96.72 f
+  div_301/u_div/u_add_PartRem_13_7/U774/Y (CLKINVX1)      0.19      96.91 r
+  div_301/u_div/u_add_PartRem_13_7/U553/Y (OAI2BB1X1)     0.37      97.28 r
+  div_301/u_div/u_add_PartRem_13_7/U489/Y (INVX3)         0.10      97.38 f
+  div_301/u_div/u_add_PartRem_13_7/U846/Y (AOI2BB2X1)     0.40      97.78 r
+  div_301/u_div/u_add_PartRem_13_7/U522/Y (AO21X1)        0.46      98.24 r
+  div_301/u_div/u_add_PartRem_13_7/U521/Y (CLKINVX1)      0.19      98.43 f
+  div_301/u_div/u_add_PartRem_13_7/U520/Y (OAI2BB2X2)     0.45      98.88 f
+  div_301/u_div/u_add_PartRem_13_7/U527/Y (OAI31X1)       0.79      99.67 r
+  div_301/u_div/u_add_PartRem_13_7/U537/Y (CLKINVX1)      0.74     100.42 f
+  div_301/u_div/u_add_PartRem_13_7/U547/Y (AOI211X4)      0.52     100.94 r
+  div_301/u_div/u_add_PartRem_13_7/CO (GPSDC_DW01_add_268)
+                                                          0.00     100.94 r
+  div_301/U2459/Y (INVX4)                                 0.05     100.99 f
+  div_301/U493/Y (NOR2X2)                                 0.13     101.12 r
+  div_301/U13054/Y (NOR2X1)                               0.13     101.25 f
+  div_301/U1899/Y (NAND2X2)                               0.18     101.43 r
+  div_301/U430/Y (INVX6)                                  0.16     101.60 f
+  div_301/U2187/Y (NOR2XL)                                0.38     101.98 r
+  div_301/U1643/Y (CLKINVX1)                              0.32     102.29 f
+  div_301/U1642/Y (INVX8)                                 0.55     102.85 r
+  div_301/U14931/Y (NAND2X1)                              0.21     103.05 f
+  div_301/U14636/Y (OAI2BB1X1)                            0.25     103.30 r
+  div_301/U14633/Y (OR4X4)                                0.48     103.78 r
+  div_301/u_div/u_add_PartRem_12_7/A[11] (GPSDC_DW01_add_275)
+                                                          0.00     103.78 r
+  div_301/u_div/u_add_PartRem_12_7/U695/Y (OR2XL)         0.72     104.50 r
+  div_301/u_div/u_add_PartRem_12_7/U540/Y (AO21X1)        0.41     104.91 r
+  div_301/u_div/u_add_PartRem_12_7/U832/Y (CLKINVX1)      0.18     105.09 f
+  div_301/u_div/u_add_PartRem_12_7/U687/Y (AOI2BB2XL)     0.68     105.77 r
+  div_301/u_div/u_add_PartRem_12_7/U592/Y (AO21X2)        0.38     106.15 r
+  div_301/u_div/u_add_PartRem_12_7/U892/Y (CLKINVX1)      0.16     106.32 f
+  div_301/u_div/u_add_PartRem_12_7/U694/Y (OAI2BB2X4)     0.31     106.63 f
+  div_301/u_div/u_add_PartRem_12_7/U934/Y (OAI31X2)       0.52     107.15 r
+  div_301/u_div/u_add_PartRem_12_7/U555/Y (CLKINVX1)      0.64     107.79 f
+  div_301/u_div/u_add_PartRem_12_7/U722/Y (AOI211X1)      0.40     108.20 r
+  div_301/u_div/u_add_PartRem_12_7/CO (GPSDC_DW01_add_275)
+                                                          0.00     108.20 r
+  div_301/U12690/Y (CLKINVX1)                             0.19     108.39 f
+  div_301/U1903/Y (NOR2X1)                                0.23     108.62 r
+  div_301/U1902/Y (NOR2X1)                                0.17     108.79 f
+  div_301/U1901/Y (NAND2X2)                               0.16     108.95 r
+  div_301/U12674/Y (INVX3)                                0.26     109.21 f
+  div_301/U2260/Y (NOR2X1)                                0.67     109.88 r
+  div_301/U12388/Y (CLKBUFX3)                             0.57     110.45 r
+  div_301/U10681/Y (NAND2XL)                              0.25     110.70 f
+  div_301/U15067/Y (NAND4X1)                              0.33     111.03 r
+  div_301/U11011/Y (OR4X8)                                0.40     111.43 r
+  div_301/u_div/u_add_PartRem_11_7/A[6] (GPSDC_DW01_add_282)
+                                                          0.00     111.43 r
+  div_301/u_div/u_add_PartRem_11_7/U960/Y (OR2X1)         0.43     111.86 r
+  div_301/u_div/u_add_PartRem_11_7/U648/Y (NAND2X1)       0.26     112.12 f
+  div_301/u_div/u_add_PartRem_11_7/U569/Y (AO22X1)        0.47     112.59 f
+  div_301/u_div/u_add_PartRem_11_7/U568/Y (OAI31X1)       0.37     112.95 r
+  div_301/u_div/u_add_PartRem_11_7/U959/Y (CLKINVX1)      0.46     113.42 f
+  div_301/u_div/u_add_PartRem_11_7/U752/Y (OAI2BB2X4)     0.36     113.77 f
+  div_301/u_div/u_add_PartRem_11_7/U989/Y (OAI31X2)       0.59     114.36 r
+  div_301/u_div/u_add_PartRem_11_7/U599/Y (INVX1)         0.57     114.93 f
+  div_301/u_div/u_add_PartRem_11_7/U814/Y (AOI211X1)      0.41     115.34 r
+  div_301/u_div/u_add_PartRem_11_7/CO (GPSDC_DW01_add_282)
+                                                          0.00     115.34 r
+  div_301/U13067/Y (CLKINVX1)                             0.21     115.55 f
+  div_301/U3435/Y (NOR2X2)                                0.16     115.71 r
+  div_301/U13052/Y (NOR2X1)                               0.14     115.85 f
+  div_301/U1877/Y (NAND2X2)                               0.22     116.07 r
+  div_301/U96/Y (INVX12)                                  0.12     116.19 f
+  div_301/U4261/Y (NAND2XL)                               0.45     116.64 r
+  div_301/U4159/Y (CLKINVX1)                              0.39     117.02 f
+  div_301/U12066/Y (INVX3)                                0.57     117.59 r
+  div_301/U6982/Y (NAND2BXL)                              0.35     117.94 r
+  div_301/U850/Y (AND4X2)                                 0.30     118.25 r
+  div_301/U848/Y (NAND2X4)                                0.33     118.58 f
+  div_301/u_div/u_add_PartRem_10_6/A[18] (GPSDC_DW01_add_288)
+                                                          0.00     118.58 f
+  div_301/u_div/u_add_PartRem_10_6/U977/Y (NAND2X1)       0.47     119.05 r
+  div_301/u_div/u_add_PartRem_10_6/U628/Y (CLKINVX1)      0.21     119.26 f
+  div_301/u_div/u_add_PartRem_10_6/U635/Y (AO21X1)        0.45     119.71 f
+  div_301/u_div/u_add_PartRem_10_6/U618/Y (INVX3)         0.11     119.82 r
+  div_301/u_div/u_add_PartRem_10_6/U616/Y (OAI2BB2X2)     0.21     120.04 r
+  div_301/u_div/u_add_PartRem_10_6/U889/Y (CLKINVX1)      0.32     120.36 f
+  div_301/u_div/u_add_PartRem_10_6/U760/Y (OAI2BB1X4)     0.31     120.67 f
+  div_301/u_div/u_add_PartRem_10_6/U890/Y (CLKINVX1)      0.26     120.93 r
+  div_301/u_div/u_add_PartRem_10_6/U673/Y (AO22X1)        0.29     121.22 r
+  div_301/u_div/u_add_PartRem_10_6/U672/Y (OAI31XL)       0.22     121.44 f
+  div_301/u_div/u_add_PartRem_10_6/U671/Y (CLKBUFX3)      0.61     122.05 f
+  div_301/u_div/u_add_PartRem_10_6/U675/Y (INVX3)         0.55     122.60 r
+  div_301/u_div/u_add_PartRem_10_6/U678/Y (NOR2X1)        0.23     122.83 f
+  div_301/u_div/u_add_PartRem_10_6/U689/Y (OR2X8)         0.21     123.04 f
+  div_301/u_div/u_add_PartRem_10_6/CO (GPSDC_DW01_add_288)
+                                                          0.00     123.04 f
+  div_301/U168/Y (MXI2X8)                                 0.16     123.20 r
+  div_301/U2649/Y (NAND2X1)                               0.24     123.44 f
+  div_301/U12695/Y (CLKINVX1)                             0.28     123.72 r
+  div_301/U5381/Y (AOI22X4)                               0.11     123.84 f
+  div_301/U5380/Y (NAND2X2)                               0.25     124.08 r
+  div_301/U1998/Y (INVX8)                                 0.14     124.22 f
+  div_301/U2258/Y (NOR2X1)                                0.62     124.84 r
+  div_301/U12382/Y (CLKBUFX3)                             0.68     125.52 r
+  div_301/U11059/Y (NAND2XL)                              0.27     125.79 f
+  div_301/U697/Y (NAND4X1)                                0.31     126.10 r
+  div_301/U3223/Y (OR4X8)                                 0.40     126.50 r
+  div_301/u_div/u_add_PartRem_9_7/A[8] (GPSDC_DW01_add_296)
+                                                          0.00     126.50 r
+  div_301/u_div/u_add_PartRem_9_7/U1093/Y (NAND2X1)       0.28     126.78 f
+  div_301/u_div/u_add_PartRem_9_7/U1090/Y (CLKINVX1)      0.21     126.99 r
+  div_301/u_div/u_add_PartRem_9_7/U682/Y (OAI2BB1X4)      0.19     127.18 r
+  div_301/u_div/u_add_PartRem_9_7/U1081/Y (AOI2BB2X1)     0.35     127.53 r
+  div_301/u_div/u_add_PartRem_9_7/U659/Y (AO21X1)         0.46     127.99 r
+  div_301/u_div/u_add_PartRem_9_7/U658/Y (CLKINVX1)       0.19     128.18 f
+  div_301/u_div/u_add_PartRem_9_7/U657/Y (OAI2BB2X2)      0.45     128.64 f
+  div_301/u_div/u_add_PartRem_9_7/U1121/Y (OAI31X2)       0.66     129.29 r
+  div_301/u_div/u_add_PartRem_9_7/U665/Y (INVX3)          0.43     129.72 f
+  div_301/u_div/u_add_PartRem_9_7/U759/Y (AOI211XL)       0.59     130.31 r
+  div_301/u_div/u_add_PartRem_9_7/CO (GPSDC_DW01_add_296)
+                                                          0.00     130.31 r
+  div_301/U2647/Y (INVX1)                                 0.23     130.53 f
+  div_301/U3439/Y (NOR2X2)                                0.19     130.72 r
+  div_301/U68/Y (NOR2X2)                                  0.14     130.86 f
+  div_301/U40/Y (NAND2X6)                                 0.11     130.97 r
+  div_301/U39/Y (INVX12)                                  0.08     131.05 f
+  div_301/U12681/Y (OR2X2)                                0.24     131.29 f
+  div_301/U2452/Y (INVX4)                                 0.24     131.54 r
+  div_301/U12127/Y (CLKBUFX3)                             0.67     132.20 r
+  div_301/U3832/Y (NAND2XL)                               0.25     132.46 f
+  div_301/U9795/Y (OAI2BB1XL)                             0.44     132.90 r
+  div_301/U9792/Y (OR4X8)                                 0.42     133.32 r
+  div_301/u_div/u_add_PartRem_8_7/A[11] (GPSDC_DW01_add_303)
+                                                          0.00     133.32 r
+  div_301/u_div/u_add_PartRem_8_7/U1145/Y (OR2X1)         0.44     133.76 r
+  div_301/u_div/u_add_PartRem_8_7/U697/Y (NAND2XL)        0.39     134.15 f
+  div_301/u_div/u_add_PartRem_8_7/U1151/Y (AOI2BB2X1)     0.50     134.65 r
+  div_301/u_div/u_add_PartRem_8_7/U677/Y (AO21X1)         0.46     135.11 r
+  div_301/u_div/u_add_PartRem_8_7/U676/Y (CLKINVX1)       0.19     135.30 f
+  div_301/u_div/u_add_PartRem_8_7/U675/Y (OAI2BB2X2)      0.45     135.75 f
+  div_301/u_div/u_add_PartRem_8_7/U1205/Y (OAI31X2)       0.67     136.42 r
+  div_301/u_div/u_add_PartRem_8_7/U685/Y (INVX3)          0.48     136.90 f
+  div_301/u_div/u_add_PartRem_8_7/U792/Y (AOI211XL)       0.61     137.51 r
+  div_301/u_div/u_add_PartRem_8_7/CO (GPSDC_DW01_add_303)
+                                                          0.00     137.51 r
+  div_301/U1857/Y (CLKINVX1)                              0.24     137.75 f
+  div_301/U1856/Y (NOR2X1)                                0.25     138.00 r
+  div_301/U13055/Y (NOR2X1)                               0.19     138.19 f
+  div_301/U159/Y (NAND2X4)                                0.16     138.35 r
+  div_301/U158/Y (INVX12)                                 0.11     138.46 f
+  div_301/U4647/Y (NAND2XL)                               0.51     138.97 r
+  div_301/U1952/Y (INVX2)                                 0.32     139.28 f
+  div_301/U1192/Y (CLKBUFX3)                              0.50     139.78 f
+  div_301/U7431/Y (NAND2XL)                               0.42     140.21 r
+  div_301/U7429/Y (NAND4X2)                               0.21     140.42 f
+  div_301/U7428/Y (OR2X8)                                 0.30     140.72 f
+  div_301/u_div/u_add_PartRem_7_4/A[38] (GPSDC_DW01_add_307)
+                                                          0.00     140.72 f
+  div_301/u_div/u_add_PartRem_7_4/U889/Y (NAND2XL)        0.64     141.36 r
+  div_301/u_div/u_add_PartRem_7_4/U1106/Y (CLKINVX1)      0.27     141.63 f
+  div_301/u_div/u_add_PartRem_7_4/U750/Y (AOI21X1)        0.54     142.17 r
+  div_301/u_div/u_add_PartRem_7_4/U735/Y (AOI31X1)        0.26     142.43 f
+  div_301/u_div/u_add_PartRem_7_4/U734/Y (AO21X2)         0.38     142.81 f
+  div_301/u_div/u_add_PartRem_7_4/U1062/Y (CLKINVX1)      0.20     143.01 r
+  div_301/u_div/u_add_PartRem_7_4/U822/Y (AO21X4)         0.28     143.29 r
+  div_301/u_div/u_add_PartRem_7_4/U1051/Y (OAI211X1)      0.29     143.58 f
+  div_301/u_div/u_add_PartRem_7_4/U747/Y (AOI21X1)        0.33     143.91 r
+  div_301/u_div/u_add_PartRem_7_4/U745/Y (AOI2BB1X2)      0.30     144.21 f
+  div_301/u_div/u_add_PartRem_7_4/CO (GPSDC_DW01_add_307)
+                                                          0.00     144.21 f
+  div_301/U2961/Y (MXI2X4)                                0.29     144.50 r
+  div_301/U13075/Y (OR2X1)                                0.38     144.88 r
+  div_301/U3342/Y (INVX3)                                 0.15     145.03 f
+  div_301/U174/Y (AOI22X2)                                0.30     145.34 r
+  div_301/U151/Y (NAND2X6)                                0.14     145.47 f
+  div_301/U150/Y (INVX12)                                 0.10     145.58 r
+  div_301/U4252/Y (AND2X1)                                0.34     145.91 r
+  div_301/U12122/Y (CLKBUFX3)                             0.28     146.19 r
+  div_301/U1461/Y (INVX8)                                 0.35     146.54 f
+  div_301/U7301/Y (NAND2BXL)                              0.45     146.99 f
+  div_301/U8915/Y (NAND4X2)                               0.22     147.21 r
+  div_301/U8913/Y (OR2X8)                                 0.29     147.50 r
+  div_301/u_div/u_add_PartRem_6_4/A[38] (GPSDC_DW01_add_314)
+                                                          0.00     147.50 r
+  div_301/u_div/u_add_PartRem_6_4/U968/Y (OR2XL)          0.70     148.20 r
+  div_301/u_div/u_add_PartRem_6_4/U1159/Y (NAND2X1)       0.41     148.60 f
+  div_301/u_div/u_add_PartRem_6_4/U742/Y (NOR2X1)         0.42     149.03 r
+  div_301/u_div/u_add_PartRem_6_4/U750/Y (AO21X1)         0.48     149.51 r
+  div_301/u_div/u_add_PartRem_6_4/U1112/Y (CLKINVX1)      0.28     149.79 f
+  div_301/u_div/u_add_PartRem_6_4/U765/Y (AO21X1)         0.66     150.45 f
+  div_301/u_div/u_add_PartRem_6_4/U1063/Y (NAND3BX1)      0.35     150.80 r
+  div_301/u_div/u_add_PartRem_6_4/U1062/Y (CLKINVX1)      0.24     151.04 f
+  div_301/u_div/u_add_PartRem_6_4/U1061/Y (AOI221X4)      0.61     151.65 r
+  div_301/u_div/u_add_PartRem_6_4/CO (GPSDC_DW01_add_314)
+                                                          0.00     151.65 r
+  div_301/U63/Y (MXI2X4)                                  0.29     151.94 r
+  div_301/U12675/Y (NAND2X1)                              0.31     152.25 f
+  div_301/U1882/Y (NOR2X1)                                0.28     152.53 r
+  div_301/U12367/Y (NOR2X1)                               0.16     152.69 f
+  div_301/U1880/Y (NAND2X2)                               0.18     152.88 r
+  div_301/U122/Y (CLKINVX8)                               0.18     153.06 f
+  div_301/U3289/Y (NAND2XL)                               0.30     153.36 r
+  div_301/U2815/Y (BUFX4)                                 0.20     153.55 r
+  div_301/U4125/Y (CLKINVX1)                              0.29     153.84 f
+  div_301/U12023/Y (CLKBUFX3)                             0.76     154.60 f
+  div_301/U15742/Y (NAND2X1)                              0.42     155.02 r
+  div_301/U11638/Y (AND4X4)                               0.27     155.29 r
+  div_301/U11636/Y (NAND2X8)                              0.20     155.48 f
+  div_301/u_div/u_add_PartRem_5_4/A[3] (GPSDC_DW01_add_321)
+                                                          0.00     155.48 f
+  div_301/u_div/u_add_PartRem_5_4/U1340/Y (NAND2X1)       0.31     155.80 r
+  div_301/u_div/u_add_PartRem_5_4/U1309/Y (CLKINVX1)      0.21     156.01 f
+  div_301/u_div/u_add_PartRem_5_4/U737/Y (AOI21X1)        0.51     156.51 r
+  div_301/u_div/u_add_PartRem_5_4/U924/Y (CLKINVX1)       0.34     156.85 f
+  div_301/u_div/u_add_PartRem_5_4/U1061/Y (OAI2BB2X4)     0.29     157.14 r
+  div_301/u_div/u_add_PartRem_5_4/U1050/Y (OAI31X2)       0.24     157.38 f
+  div_301/u_div/u_add_PartRem_5_4/U710/Y (CLKINVX8)       0.12     157.50 r
+  div_301/u_div/u_add_PartRem_5_4/U1006/Y (OAI2BB2X4)     0.33     157.83 r
+  div_301/u_div/u_add_PartRem_5_4/U820/Y (OR3X8)          0.19     158.02 r
+  div_301/u_div/u_add_PartRem_5_4/U802/Y (NAND2X4)        0.06     158.08 f
+  div_301/u_div/u_add_PartRem_5_4/U801/Y (BUFX6)          0.18     158.26 f
+  div_301/u_div/u_add_PartRem_5_4/U813/Y (INVX6)          0.26     158.53 r
+  div_301/u_div/u_add_PartRem_5_4/U831/Y (CLKINVX12)      0.09     158.61 f
+  div_301/u_div/u_add_PartRem_5_4/U978/Y (OAI21X4)        0.22     158.83 r
+  div_301/u_div/u_add_PartRem_5_4/U1347/Y (OAI211X2)      0.40     159.23 f
+  div_301/u_div/u_add_PartRem_5_4/CO (GPSDC_DW01_add_321)
+                                                          0.00     159.23 f
+  div_301/U3306/Y (INVXL)                                 0.54     159.77 r
+  div_301/U12370/Y (OR2X1)                                0.48     160.24 r
+  div_301/U2687/Y (NOR2X2)                                0.15     160.39 f
+  div_301/U12368/Y (NOR2X1)                               0.37     160.75 r
+  div_301/U8/Y (NAND2X6)                                  0.16     160.92 f
+  div_301/U7/Y (INVX12)                                   0.12     161.03 r
+  div_301/U2812/Y (AND2X1)                                0.34     161.37 r
+  div_301/U12025/Y (CLKBUFX3)                             0.34     161.71 r
+  div_301/U2431/Y (INVX4)                                 0.45     162.16 f
+  div_301/U14644/Y (NOR2X1)                               0.34     162.51 r
+  div_301/U14642/Y (OR4X4)                                0.46     162.97 r
+  div_301/u_div/u_add_PartRem_4_3/A[11] (GPSDC_DW01_add_327)
+                                                          0.00     162.97 r
+  div_301/u_div/u_add_PartRem_4_3/U1128/Y (OR2XL)         0.74     163.71 r
+  div_301/u_div/u_add_PartRem_4_3/U943/Y (NAND2X1)        0.36     164.07 f
+  div_301/u_div/u_add_PartRem_4_3/U1133/Y (NOR2BXL)       0.76     164.83 r
+  div_301/u_div/u_add_PartRem_4_3/U980/Y (NAND2X1)        0.23     165.06 f
+  div_301/u_div/u_add_PartRem_4_3/U919/Y (AO22X1)         0.46     165.52 f
+  div_301/u_div/u_add_PartRem_4_3/U918/Y (CLKBUFX3)       0.49     166.02 f
+  div_301/u_div/u_add_PartRem_4_3/U929/Y (OAI31X4)        0.93     166.95 r
+  div_301/u_div/u_add_PartRem_4_3/U1028/Y (OAI21X4)       0.34     167.29 f
+  div_301/u_div/u_add_PartRem_4_3/U928/Y (OAI22XL)        0.62     167.91 r
+  div_301/u_div/u_add_PartRem_4_3/CO (GPSDC_DW01_add_327)
+                                                          0.00     167.91 r
+  div_301/U1883/Y (AOI22X2)                               0.28     168.19 f
+  div_301/U24/Y (NAND2X4)                                 0.18     168.37 r
+  div_301/U2406/Y (CLKINVX8)                              0.16     168.52 f
+  div_301/U3284/Y (NAND2XL)                               0.28     168.80 r
+  div_301/U1041/Y (CLKINVX1)                              0.18     168.98 f
+  div_301/U12083/Y (CLKBUFX3)                             0.26     169.25 f
+  div_301/U2439/Y (CLKBUFX2)                              0.72     169.97 f
+  div_301/U4747/Y (NAND2XL)                               0.52     170.49 r
+  div_301/U576/Y (NAND4X1)                                0.28     170.76 f
+  div_301/U12714/Y (OR4X4)                                0.61     171.37 f
+  div_301/u_div/u_add_PartRem_3_4/A[50] (GPSDC_DW01_add_335)
+                                                          0.00     171.37 f
+  div_301/u_div/u_add_PartRem_3_4/U1129/Y (CLKINVX1)      0.19     171.56 r
+  div_301/u_div/u_add_PartRem_3_4/U1128/Y (NAND2X1)       0.26     171.82 f
+  div_301/u_div/u_add_PartRem_3_4/U819/Y (NAND2X1)        0.45     172.27 r
+  div_301/u_div/u_add_PartRem_3_4/U839/Y (OR3X2)          0.35     172.62 r
+  div_301/u_div/u_add_PartRem_3_4/U1114/Y (CLKINVX1)      0.22     172.84 f
+  div_301/u_div/u_add_PartRem_3_4/U867/Y (NAND4X1)        0.54     173.38 r
+  div_301/u_div/u_add_PartRem_3_4/U1113/Y (CLKINVX1)      0.48     173.86 f
+  div_301/u_div/u_add_PartRem_3_4/U938/Y (NAND2X4)        0.23     174.09 r
+  div_301/u_div/u_add_PartRem_3_4/U883/Y (OAI211X1)       0.46     174.55 f
+  div_301/u_div/u_add_PartRem_3_4/U901/Y (INVX8)          0.13     174.68 r
+  div_301/u_div/u_add_PartRem_3_4/U1034/Y (OAI21X4)       0.09     174.77 f
+  div_301/u_div/u_add_PartRem_3_4/U1033/Y (OAI21X4)       0.18     174.96 r
+  div_301/u_div/u_add_PartRem_3_4/U772/Y (OAI211X4)       0.40     175.35 f
+  div_301/u_div/u_add_PartRem_3_4/CO (GPSDC_DW01_add_335)
+                                                          0.00     175.35 f
+  div_301/U3308/Y (INVXL)                                 0.43     175.78 r
+  div_301/U12372/Y (OR2X1)                                0.48     176.27 r
+  div_301/U3282/Y (NOR2X2)                                0.19     176.45 f
+  div_301/U114/Y (NOR2X4)                                 0.14     176.59 r
+  div_301/U112/Y (NAND2X4)                                0.10     176.68 f
+  div_301/U12108/Y (INVX3)                                0.27     176.96 r
+  div_301/U1941/Y (OR2X6)                                 0.18     177.14 r
+  div_301/U625/Y (CLKINVX1)                               0.31     177.44 f
+  div_301/U781/Y (BUFX2)                                  0.37     177.81 f
+  div_301/U1940/Y (BUFX16)                                0.13     177.95 f
+  div_301/U1936/Y (CLKINVX1)                              0.09     178.03 r
+  div_301/U1937/Y (CLKINVX1)                              0.51     178.54 f
+  div_301/U3854/Y (NAND2XL)                               0.53     179.07 r
+  div_301/U7441/Y (NAND4X2)                               0.22     179.29 f
+  div_301/U7440/Y (OR2X8)                                 0.30     179.59 f
+  div_301/u_div/u_add_PartRem_2_7/A[34] (GPSDC_DW01_add_345)
+                                                          0.00     179.59 f
+  div_301/u_div/u_add_PartRem_2_7/U1469/Y (NAND2X1)       0.37     179.96 r
+  div_301/u_div/u_add_PartRem_2_7/U845/Y (CLKINVX1)       0.21     180.17 f
+  div_301/u_div/u_add_PartRem_2_7/U829/Y (AO21X2)         0.36     180.53 f
+  div_301/u_div/u_add_PartRem_2_7/U830/Y (INVX1)          0.17     180.70 r
+  div_301/u_div/u_add_PartRem_2_7/U828/Y (OAI2BB2X2)      0.23     180.93 r
+  div_301/u_div/u_add_PartRem_2_7/U1329/Y (CLKINVX1)      0.24     181.17 f
+  div_301/u_div/u_add_PartRem_2_7/U924/Y (OAI2BB1X2)      0.32     181.49 f
+  div_301/u_div/u_add_PartRem_2_7/U1325/Y (CLKINVX1)      0.20     181.69 r
+  div_301/u_div/u_add_PartRem_2_7/U895/Y (AO21X1)         0.73     182.42 r
+  div_301/u_div/u_add_PartRem_2_7/U903/Y (OAI211X1)       0.42     182.84 f
+  div_301/u_div/u_add_PartRem_2_7/U902/Y (CLKINVX1)       0.20     183.03 r
+  div_301/u_div/u_add_PartRem_2_7/U901/Y (OAI21XL)        0.23     183.26 f
+  div_301/u_div/u_add_PartRem_2_7/U900/Y (OAI21X2)        0.47     183.73 r
+  div_301/u_div/u_add_PartRem_2_7/U1236/Y (OR2X1)         0.28     184.00 r
+  div_301/u_div/u_add_PartRem_2_7/U931/Y (AOI21X2)        0.14     184.15 f
+  div_301/u_div/u_add_PartRem_2_7/CO (GPSDC_DW01_add_345)
+                                                          0.00     184.15 f
+  div_301/U2692/Y (CLKINVX4)                              0.07     184.21 r
+  div_301/U1873/Y (NOR2X1)                                0.09     184.31 f
+  div_301/U12113/Y (NOR2X1)                               0.25     184.55 r
+  div_301/U3279/Y (NAND2X2)                               0.20     184.75 f
+  div_301/U2367/Y (CLKINVX8)                              0.15     184.91 r
+  div_301/U376/Y (OR2XL)                                  0.47     185.38 r
+  div_301/U2290/Y (CLKINVX1)                              0.27     185.65 f
+  div_301/U366/Y (BUFX8)                                  0.19     185.84 f
+  div_301/U370/Y (INVX20)                                 0.10     185.94 r
+  div_301/U373/Y (INVX12)                                 0.10     186.04 f
+  div_301/U5788/Y (NAND2XL)                               0.29     186.33 r
+  div_301/U7493/Y (OAI2BB1X2)                             0.16     186.49 f
+  div_301/U7492/Y (OR4X8)                                 0.46     186.94 f
+  div_301/u_div/u_add_PartRem_1_7/A[32] (GPSDC_DW01_add_352)
+                                                          0.00     186.94 f
+  div_301/u_div/u_add_PartRem_1_7/U1493/Y (NAND2X1)       0.39     187.33 r
+  div_301/u_div/u_add_PartRem_1_7/U874/Y (CLKINVX1)       0.21     187.54 f
+  div_301/u_div/u_add_PartRem_1_7/U950/Y (AO21XL)         0.54     188.08 f
+  div_301/u_div/u_add_PartRem_1_7/U1079/Y (OAI2BB2X4)     0.24     188.32 r
+  div_301/u_div/u_add_PartRem_1_7/U1370/Y (CLKINVX1)      0.21     188.53 f
+  div_301/u_div/u_add_PartRem_1_7/U907/Y (OAI2BB1X1)      0.42     188.95 f
+  div_301/u_div/u_add_PartRem_1_7/U1366/Y (CLKINVX1)      0.27     189.22 r
+  div_301/u_div/u_add_PartRem_1_7/U1053/Y (AO21X4)        0.30     189.52 r
+  div_301/u_div/u_add_PartRem_1_7/U935/Y (OAI211X1)       0.32     189.85 f
+  div_301/u_div/u_add_PartRem_1_7/U934/Y (CLKINVX1)       0.19     190.03 r
+  div_301/u_div/u_add_PartRem_1_7/U933/Y (OAI21XL)        0.23     190.26 f
+  div_301/u_div/u_add_PartRem_1_7/U932/Y (OAI21X2)        0.41     190.67 r
+  div_301/u_div/u_add_PartRem_1_7/U927/Y (CLKINVX1)       0.65     191.32 f
+  div_301/u_div/u_add_PartRem_1_7/U937/Y (AND2X2)         0.40     191.72 f
+  div_301/u_div/u_add_PartRem_1_7/U980/Y (OA21X4)         0.22     191.94 f
+  div_301/u_div/u_add_PartRem_1_7/CO (GPSDC_DW01_add_352)
+                                                          0.00     191.94 f
+  div_301/U12207/Y (CLKINVX1)                             0.14     192.08 r
+  div_301/U2602/Y (NOR2X4)                                0.09     192.17 f
+  div_301/U12366/Y (NOR2X1)                               0.24     192.41 r
+  div_301/U4221/Y (NAND2X2)                               0.21     192.62 f
+  div_301/U2634/Y (INVX8)                                 0.17     192.79 r
+  div_301/U3273/Y (NAND2X1)                               0.31     193.10 f
+  div_301/U2220/Y (INVX1)                                 0.35     193.45 r
+  div_301/U12017/Y (CLKBUFX3)                             0.27     193.72 r
+  div_301/U2323/Y (BUFX4)                                 0.56     194.28 r
+  div_301/U14316/Y (OAI2BB1X1)                            0.31     194.59 r
+  div_301/U14314/Y (NOR2X1)                               0.15     194.74 f
+  div_301/U1849/Y (NAND4X2)                               0.57     195.31 r
+  div_301/u_div/u_add_PartRem_0_1/A[34] (GPSDC_DW01_add_353)
+                                                          0.00     195.31 r
+  div_301/u_div/u_add_PartRem_0_1/U1041/Y (CLKINVX1)      0.35     195.66 f
+  div_301/u_div/u_add_PartRem_0_1/U965/Y (OAI32XL)        0.73     196.38 r
+  div_301/u_div/u_add_PartRem_0_1/U874/Y (INVX3)          0.19     196.58 f
+  div_301/u_div/u_add_PartRem_0_1/U879/Y (AOI221XL)       0.74     197.31 r
+  div_301/u_div/u_add_PartRem_0_1/U962/Y (AOI211X2)       0.21     197.53 f
+  div_301/u_div/u_add_PartRem_0_1/U960/Y (OAI31X4)        0.44     197.96 r
+  div_301/u_div/u_add_PartRem_0_1/U1087/Y (AOI2BB1X1)     0.26     198.23 r
+  div_301/u_div/u_add_PartRem_0_1/U1084/Y (OAI31XL)       0.29     198.51 f
+  div_301/u_div/u_add_PartRem_0_1/U875/Y (OAI211X2)       0.27     198.78 r
+  div_301/u_div/u_add_PartRem_0_1/CO (GPSDC_DW01_add_353)
+                                                          0.00     198.78 r
+  div_301/U4064/Y (MXI2X1)                                0.21     198.99 f
+  div_301/U1897/Y (MXI2X2)                                0.23     199.22 r
+  div_301/quotient[0] (GPSDC_DW_div_uns_2)                0.00     199.22 r
+  U1586/Y (AOI22X2)                                       0.18     199.40 f
+  U1585/Y (NAND4X2)                                       0.17     199.57 r
+  y_reg[0]/D (DFFRX1)                                     0.00     199.57 r
+  data arrival time                                                199.57
+
+  clock clk (rise edge)                                 200.00     200.00
+  clock network delay (ideal)                             1.00     201.00
+  clock uncertainty                                      -1.00     200.00
+  y_reg[0]/CK (DFFRX1)                                    0.00     200.00 r
+  library setup time                                     -0.24     199.76
+  data required time                                               199.76
+  --------------------------------------------------------------------------
+  data required time                                               199.76
+  data arrival time                                               -199.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+1
