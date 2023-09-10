@@ -1,0 +1,306 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ISE
+Version: O-2018.06
+Date   : Sat Apr  8 17:25:40 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: color_idx_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: avg_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ISE                tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  color_idx_reg_reg[0]/CK (DFFSX2)                        0.00       0.50 r
+  color_idx_reg_reg[0]/Q (DFFSX2)                         0.57       1.07 r
+  U1431/Y (NAND2X2)                                       0.20       1.28 f
+  U1430/Y (BUFX12)                                        0.24       1.52 f
+  U2296/Y (OAI222X4)                                      0.72       2.24 r
+  div_67/b[2] (ISE_DW_div_uns_6)                          0.00       2.24 r
+  div_67/u_div/u_add_B3_0/A[2] (ISE_DW01_add_239)         0.00       2.24 r
+  div_67/u_div/u_add_B3_0/U242/Y (NAND2XL)                0.24       2.48 f
+  div_67/u_div/u_add_B3_0/U174/Y (BUFX4)                  0.20       2.68 f
+  div_67/u_div/u_add_B3_0/U152/Y (OAI21X2)                0.18       2.86 r
+  div_67/u_div/u_add_B3_0/U191/Y (NAND2X4)                0.10       2.97 f
+  div_67/u_div/u_add_B3_0/U166/Y (AND2X2)                 0.24       3.21 f
+  div_67/u_div/u_add_B3_0/U228/Y (OA21X4)                 0.24       3.45 f
+  div_67/u_div/u_add_B3_0/U151/Y (INVX8)                  0.13       3.58 r
+  div_67/u_div/u_add_B3_0/U192/Y (AND2X1)                 0.31       3.90 r
+  div_67/u_div/u_add_B3_0/U193/Y (NOR2X4)                 0.11       4.00 f
+  div_67/u_div/u_add_B3_0/U196/Y (XOR2X4)                 0.15       4.15 f
+  div_67/u_div/u_add_B3_0/SUM[13] (ISE_DW01_add_239)      0.00       4.15 f
+  div_67/U123/Y (OR4X2)                                   0.39       4.54 f
+  div_67/U650/Y (OR2X8)                                   0.18       4.72 f
+  div_67/U1613/Y (CLKINVX6)                               0.05       4.77 r
+  div_67/U358/Y (NAND2X4)                                 0.10       4.88 f
+  div_67/U495/Y (OR2X4)                                   0.24       5.12 f
+  div_67/U494/Y (NOR2X6)                                  0.09       5.21 r
+  div_67/U826/Y (MXI2X4)                                  0.13       5.34 f
+  div_67/U134/Y (NOR2X4)                                  0.12       5.46 r
+  div_67/U338/Y (OR2X4)                                   0.17       5.63 r
+  div_67/U540/Y (NAND2X8)                                 0.12       5.75 f
+  div_67/U96/Y (NOR2X2)                                   0.23       5.98 r
+  div_67/U542/Y (OAI21X2)                                 0.19       6.17 f
+  div_67/U155/Y (AOI21X2)                                 0.19       6.36 r
+  div_67/U154/Y (OR2X4)                                   0.26       6.62 r
+  div_67/U539/Y (CLKINVX8)                                0.16       6.78 f
+  div_67/U150/Y (MX2X6)                                   0.32       7.10 r
+  div_67/U140/Y (CLKINVX1)                                0.29       7.40 f
+  div_67/U137/Y (NAND2X1)                                 0.38       7.78 r
+  div_67/U32/Y (INVX3)                                    0.15       7.93 f
+  div_67/U108/Y (NAND2X2)                                 0.15       8.08 r
+  div_67/U361/Y (NAND3X4)                                 0.25       8.33 f
+  div_67/U149/Y (NAND2BX1)                                0.40       8.73 f
+  div_67/U145/Y (OAI2BB1X1)                               0.40       9.13 f
+  div_67/U386/Y (AOI21X2)                                 0.30       9.42 r
+  div_67/U822/Y (OAI21X2)                                 0.17       9.59 f
+  div_67/U492/Y (NAND2X6)                                 0.18       9.77 r
+  div_67/U92/Y (MXI2X4)                                   0.23      10.00 r
+  div_67/U1309/Y (CLKINVX1)                               0.34      10.33 f
+  div_67/U561/Y (CLKAND2X4)                               0.34      10.68 f
+  div_67/U598/Y (NAND2BXL)                                0.35      11.03 r
+  div_67/U582/Y (OAI21X2)                                 0.18      11.21 f
+  div_67/U74/Y (OR2X8)                                    0.25      11.46 f
+  div_67/u_div/u_add_PartRem_1_11_3/A[2] (ISE_DW01_add_242)
+                                                          0.00      11.46 f
+  div_67/u_div/u_add_PartRem_1_11_3/U63/Y (NOR2X2)        0.30      11.75 r
+  div_67/u_div/u_add_PartRem_1_11_3/U90/Y (NOR2X1)        0.25      12.01 f
+  div_67/u_div/u_add_PartRem_1_11_3/U69/Y (AOI21X4)       0.28      12.29 r
+  div_67/u_div/u_add_PartRem_1_11_3/U60/Y (OAI21X1)       0.17      12.46 f
+  div_67/u_div/u_add_PartRem_1_11_3/CO (ISE_DW01_add_242)
+                                                          0.00      12.46 f
+  div_67/U1241/Y (CLKINVX1)                               0.13      12.59 r
+  div_67/U665/Y (NOR2X1)                                  0.14      12.73 f
+  div_67/U59/Y (MXI2X4)                                   0.24      12.97 r
+  div_67/U804/Y (NAND2XL)                                 0.24      13.21 f
+  div_67/U265/Y (BUFX4)                                   0.20      13.42 f
+  div_67/U849/Y (NOR2XL)                                  0.36      13.78 r
+  div_67/U175/Y (OR2X2)                                   0.47      14.25 r
+  div_67/u_div/u_add_PartRem_1_10_2/A[1] (ISE_DW01_add_244)
+                                                          0.00      14.25 r
+  div_67/u_div/u_add_PartRem_1_10_2/U101/Y (NAND2X1)      0.35      14.60 f
+  div_67/u_div/u_add_PartRem_1_10_2/U86/Y (OA21XL)        0.45      15.05 f
+  div_67/u_div/u_add_PartRem_1_10_2/U81/Y (OA21X4)        0.23      15.28 f
+  div_67/u_div/u_add_PartRem_1_10_2/U80/Y (OR2X4)         0.18      15.46 f
+  div_67/u_div/u_add_PartRem_1_10_2/U95/Y (NAND2X2)       0.13      15.59 r
+  div_67/u_div/u_add_PartRem_1_10_2/U98/Y (AO21X4)        0.19      15.78 r
+  div_67/u_div/u_add_PartRem_1_10_2/CO (ISE_DW01_add_244)
+                                                          0.00      15.78 r
+  div_67/U667/Y (NAND3BX2)                                0.32      16.10 f
+  div_67/U365/Y (INVX8)                                   0.26      16.36 r
+  div_67/U363/Y (MXI2X8)                                  0.22      16.57 f
+  div_67/U1310/Y (CLKINVX1)                               0.34      16.91 r
+  div_67/U366/Y (NAND2X4)                                 0.12      17.04 f
+  div_67/U299/Y (INVX4)                                   0.23      17.27 r
+  div_67/U167/Y (NAND2X1)                                 0.15      17.42 f
+  div_67/U799/Y (OAI2BB1XL)                               0.37      17.79 r
+  div_67/U500/Y (OR2X6)                                   0.28      18.08 r
+  div_67/u_div/u_add_PartRem_1_9_1/A[5] (ISE_DW01_add_246)
+                                                          0.00      18.08 r
+  div_67/u_div/u_add_PartRem_1_9_1/U103/Y (NOR2X1)        0.18      18.25 f
+  div_67/u_div/u_add_PartRem_1_9_1/U99/Y (NOR2X1)         0.41      18.66 r
+  div_67/u_div/u_add_PartRem_1_9_1/U149/Y (NAND2X1)       0.25      18.91 f
+  div_67/u_div/u_add_PartRem_1_9_1/U115/Y (OAI21X4)       0.28      19.19 r
+  div_67/u_div/u_add_PartRem_1_9_1/U143/Y (OAI2BB1X1)     0.29      19.48 r
+  div_67/u_div/u_add_PartRem_1_9_1/CO (ISE_DW01_add_246)
+                                                          0.00      19.48 r
+  div_67/U102/Y (CLKINVX3)                                0.13      19.61 f
+  div_67/U110/Y (NOR3X2)                                  0.36      19.97 r
+  div_67/U387/Y (MXI2X8)                                  0.18      20.15 f
+  div_67/U181/Y (INVX6)                                   0.11      20.26 r
+  div_67/U319/Y (NAND2X2)                                 0.09      20.36 f
+  div_67/U983/Y (INVX3)                                   0.35      20.71 r
+  div_67/U883/Y (NAND2XL)                                 0.32      21.03 f
+  div_67/U1521/Y (NAND3X4)                                0.32      21.34 r
+  div_67/u_div/u_add_PartRem_1_8_2/A[0] (ISE_DW01_add_250)
+                                                          0.00      21.34 r
+  div_67/u_div/u_add_PartRem_1_8_2/U223/Y (NAND2X1)       0.25      21.60 f
+  div_67/u_div/u_add_PartRem_1_8_2/U143/Y (OAI2BB1X1)     0.24      21.84 r
+  div_67/u_div/u_add_PartRem_1_8_2/U144/Y (CLKINVX1)      0.30      22.14 f
+  div_67/u_div/u_add_PartRem_1_8_2/U164/Y (OA21X4)        0.30      22.44 f
+  div_67/u_div/u_add_PartRem_1_8_2/U125/Y (AOI2BB1X2)     0.25      22.69 f
+  div_67/u_div/u_add_PartRem_1_8_2/U124/Y (CLKINVX6)      0.13      22.83 r
+  div_67/u_div/u_add_PartRem_1_8_2/U136/Y (NAND2X2)       0.09      22.92 f
+  div_67/u_div/u_add_PartRem_1_8_2/U142/Y (NAND2X1)       0.26      23.18 r
+  div_67/u_div/u_add_PartRem_1_8_2/CO (ISE_DW01_add_250)
+                                                          0.00      23.18 r
+  div_67/U623/Y (NAND2X6)                                 0.19      23.37 f
+  div_67/U570/Y (INVX12)                                  0.12      23.49 r
+  div_67/U871/Y (MXI2X4)                                  0.24      23.73 f
+  div_67/U71/Y (INVX12)                                   0.14      23.87 r
+  div_67/U69/Y (NAND2XL)                                  0.23      24.10 f
+  div_67/U509/Y (BUFX12)                                  0.24      24.34 f
+  div_67/U788/Y (OA22XL)                                  0.49      24.83 f
+  div_67/U215/Y (NAND2X2)                                 0.42      25.25 r
+  div_67/u_div/u_add_PartRem_1_7_2/A[9] (ISE_DW01_add_253)
+                                                          0.00      25.25 r
+  div_67/u_div/u_add_PartRem_1_7_2/U178/Y (NAND2XL)       0.28      25.53 f
+  div_67/u_div/u_add_PartRem_1_7_2/U141/Y (BUFX4)         0.23      25.76 f
+  div_67/u_div/u_add_PartRem_1_7_2/U145/Y (OAI21X2)       0.22      25.99 r
+  div_67/u_div/u_add_PartRem_1_7_2/U171/Y (AOI21X4)       0.11      26.10 f
+  div_67/u_div/u_add_PartRem_1_7_2/U166/Y (INVX1)         0.30      26.40 r
+  div_67/u_div/u_add_PartRem_1_7_2/U169/Y (NAND2X2)       0.14      26.53 f
+  div_67/u_div/u_add_PartRem_1_7_2/U170/Y (NAND2X2)       0.11      26.65 r
+  div_67/u_div/u_add_PartRem_1_7_2/U194/Y (AO21X4)        0.29      26.94 r
+  div_67/u_div/u_add_PartRem_1_7_2/CO (ISE_DW01_add_253)
+                                                          0.00      26.94 r
+  div_67/U708/Y (MXI2X4)                                  0.30      27.23 r
+  div_67/U324/Y (INVX4)                                   0.20      27.43 f
+  div_67/U827/Y (OR2XL)                                   0.34      27.77 f
+  div_67/U20/Y (CLKAND2X4)                                0.18      27.95 f
+  div_67/U1459/Y (OAI2BB2XL)                              0.50      28.45 r
+  div_67/U45/Y (OR2X6)                                    0.32      28.77 r
+  div_67/u_div/u_add_PartRem_0_6_2/A[1] (ISE_DW01_add_256)
+                                                          0.00      28.77 r
+  div_67/u_div/u_add_PartRem_0_6_2/U169/Y (NAND2X1)       0.27      29.04 f
+  div_67/u_div/u_add_PartRem_0_6_2/U187/Y (OAI21X1)       0.32      29.37 r
+  div_67/u_div/u_add_PartRem_0_6_2/U233/Y (AOI21X1)       0.23      29.60 f
+  div_67/u_div/u_add_PartRem_0_6_2/U152/Y (OA21X4)        0.29      29.89 f
+  div_67/u_div/u_add_PartRem_0_6_2/U185/Y (OR2X8)         0.16      30.05 f
+  div_67/u_div/u_add_PartRem_0_6_2/U186/Y (NAND2X8)       0.15      30.21 r
+  div_67/u_div/u_add_PartRem_0_6_2/CO (ISE_DW01_add_256)
+                                                          0.00      30.21 r
+  div_67/U1616/Y (MXI2X4)                                 0.19      30.39 f
+  div_67/U263/Y (BUFX8)                                   0.20      30.59 f
+  div_67/U10/Y (OR2X2)                                    0.36      30.95 f
+  div_67/U9/Y (INVX8)                                     0.21      31.16 r
+  div_67/U1318/Y (NAND2X1)                                0.14      31.31 f
+  div_67/U46/Y (OAI21X1)                                  0.24      31.55 r
+  div_67/U103/Y (OR2X6)                                   0.25      31.80 r
+  div_67/u_div/u_add_PartRem_0_5_1/A[5] (ISE_DW01_add_258)
+                                                          0.00      31.80 r
+  div_67/u_div/u_add_PartRem_0_5_1/U162/Y (NOR2XL)        0.15      31.95 f
+  div_67/u_div/u_add_PartRem_0_5_1/U152/Y (CLKBUFX3)      0.36      32.31 f
+  div_67/u_div/u_add_PartRem_0_5_1/U157/Y (NOR2X1)        0.39      32.69 r
+  div_67/u_div/u_add_PartRem_0_5_1/U214/Y (NAND2X1)       0.20      32.89 f
+  div_67/u_div/u_add_PartRem_0_5_1/U189/Y (OA21X4)        0.28      33.17 f
+  div_67/u_div/u_add_PartRem_0_5_1/U182/Y (INVX8)         0.12      33.29 r
+  div_67/u_div/u_add_PartRem_0_5_1/U164/Y (AO21X1)        0.36      33.65 r
+  div_67/u_div/u_add_PartRem_0_5_1/CO (ISE_DW01_add_258)
+                                                          0.00      33.65 r
+  div_67/U426/Y (NAND2X6)                                 0.12      33.77 f
+  div_67/U428/Y (NAND2X8)                                 0.10      33.87 r
+  div_67/U430/Y (INVX16)                                  0.07      33.94 f
+  div_67/U545/Y (NAND2XL)                                 0.31      34.25 r
+  div_67/U303/Y (BUFX8)                                   0.29      34.54 r
+  div_67/U225/Y (OA21XL)                                  0.44      34.98 r
+  div_67/U86/Y (NAND2X4)                                  0.28      35.26 f
+  div_67/u_div/u_add_PartRem_0_4_1/A[5] (ISE_DW01_add_261)
+                                                          0.00      35.26 f
+  div_67/u_div/u_add_PartRem_0_4_1/U165/Y (NOR2X1)        0.43      35.69 r
+  div_67/u_div/u_add_PartRem_0_4_1/U151/Y (NOR2X2)        0.22      35.90 f
+  div_67/u_div/u_add_PartRem_0_4_1/U210/Y (NAND2X1)       0.23      36.14 r
+  div_67/u_div/u_add_PartRem_0_4_1/U185/Y (OAI21X2)       0.13      36.27 f
+  div_67/u_div/u_add_PartRem_0_4_1/U162/Y (CLKBUFX3)      0.41      36.68 f
+  div_67/u_div/u_add_PartRem_0_4_1/U163/Y (AO21X4)        0.27      36.94 f
+  div_67/u_div/u_add_PartRem_0_4_1/CO (ISE_DW01_add_261)
+                                                          0.00      36.94 f
+  div_67/U1615/Y (MXI2X4)                                 0.16      37.10 r
+  div_67/U507/Y (INVX12)                                  0.10      37.20 f
+  div_67/U327/Y (INVX8)                                   0.12      37.32 r
+  div_67/U19/Y (OR2X2)                                    0.35      37.66 r
+  div_67/U382/Y (INVX16)                                  0.15      37.81 f
+  div_67/U1144/Y (NAND2X1)                                0.17      37.98 r
+  div_67/U588/Y (OA21XL)                                  0.45      38.43 r
+  div_67/U750/Y (NAND2X4)                                 0.30      38.73 f
+  div_67/u_div/u_add_PartRem_0_3_1/A[6] (ISE_DW01_add_264)
+                                                          0.00      38.73 f
+  div_67/u_div/u_add_PartRem_0_3_1/U171/Y (NOR2X1)        0.29      39.02 r
+  div_67/u_div/u_add_PartRem_0_3_1/U144/Y (BUFX6)         0.19      39.21 r
+  div_67/u_div/u_add_PartRem_0_3_1/U143/Y (NOR2X2)        0.12      39.33 f
+  div_67/u_div/u_add_PartRem_0_3_1/U180/Y (AOI21X2)       0.22      39.55 r
+  div_67/u_div/u_add_PartRem_0_3_1/U179/Y (OAI21X2)       0.14      39.69 f
+  div_67/u_div/u_add_PartRem_0_3_1/U174/Y (BUFX12)        0.16      39.85 f
+  div_67/u_div/u_add_PartRem_0_3_1/U158/Y (AO21X1)        0.41      40.26 f
+  div_67/u_div/u_add_PartRem_0_3_1/CO (ISE_DW01_add_264)
+                                                          0.00      40.26 f
+  div_67/U562/Y (NAND2X8)                                 0.12      40.38 r
+  div_67/U972/Y (NAND2X8)                                 0.08      40.46 f
+  div_67/U973/Y (CLKINVX12)                               0.06      40.52 r
+  div_67/U586/Y (OR2X4)                                   0.23      40.74 r
+  div_67/U392/Y (INVX12)                                  0.13      40.88 f
+  div_67/U695/Y (NAND2XL)                                 0.25      41.13 r
+  div_67/U710/Y (OA21XL)                                  0.40      41.53 r
+  div_67/U203/Y (NAND2X2)                                 0.37      41.89 f
+  div_67/u_div/u_add_PartRem_0_2_2/A[5] (ISE_DW01_add_268)
+                                                          0.00      41.89 f
+  div_67/u_div/u_add_PartRem_0_2_2/U228/Y (NAND2X1)       0.46      42.35 r
+  div_67/u_div/u_add_PartRem_0_2_2/U169/Y (OAI21X1)       0.27      42.62 f
+  div_67/u_div/u_add_PartRem_0_2_2/U172/Y (AOI21X4)       0.16      42.78 r
+  div_67/u_div/u_add_PartRem_0_2_2/U192/Y (OAI21X2)       0.11      42.90 f
+  div_67/u_div/u_add_PartRem_0_2_2/U160/Y (BUFX6)         0.20      43.10 f
+  div_67/u_div/u_add_PartRem_0_2_2/U193/Y (AOI21X4)       0.23      43.33 r
+  div_67/u_div/u_add_PartRem_0_2_2/U173/Y (CLKINVX12)     0.13      43.46 f
+  div_67/u_div/u_add_PartRem_0_2_2/CO (ISE_DW01_add_268)
+                                                          0.00      43.46 f
+  div_67/U634/Y (CLKINVX1)                                0.18      43.64 r
+  div_67/U633/Y (NAND2X6)                                 0.10      43.74 f
+  div_67/U578/Y (NAND2X8)                                 0.10      43.84 r
+  div_67/U572/Y (CLKINVX12)                               0.08      43.92 f
+  div_67/U305/Y (OR2X6)                                   0.23      44.15 f
+  div_67/U390/Y (CLKINVX6)                                0.16      44.31 r
+  div_67/U209/Y (NAND2X1)                                 0.13      44.45 f
+  div_67/U1096/Y (OAI21XL)                                0.36      44.81 r
+  div_67/U80/Y (OR2X6)                                    0.33      45.14 r
+  div_67/u_div/u_add_PartRem_0_1_3/A[9] (ISE_DW01_add_272)
+                                                          0.00      45.14 r
+  div_67/u_div/u_add_PartRem_0_1_3/U170/Y (NOR2X1)        0.18      45.32 f
+  div_67/u_div/u_add_PartRem_0_1_3/U215/Y (NOR2X1)        0.50      45.82 r
+  div_67/u_div/u_add_PartRem_0_1_3/U157/Y (NAND2X1)       0.37      46.19 f
+  div_67/u_div/u_add_PartRem_0_1_3/U159/Y (NOR2X1)        0.29      46.47 r
+  div_67/u_div/u_add_PartRem_0_1_3/U158/Y (NAND2X1)       0.16      46.63 f
+  div_67/u_div/u_add_PartRem_0_1_3/U166/Y (NAND2X1)       0.20      46.83 r
+  div_67/u_div/u_add_PartRem_0_1_3/CO (ISE_DW01_add_272)
+                                                          0.00      46.83 r
+  div_67/U119/Y (NAND2X2)                                 0.13      46.96 f
+  div_67/U323/Y (AND2X8)                                  0.20      47.16 f
+  div_67/U556/Y (NAND2XL)                                 0.31      47.47 r
+  div_67/U104/Y (BUFX8)                                   0.29      47.76 r
+  div_67/U223/Y (OR2X1)                                   0.24      48.00 r
+  div_67/U315/Y (AND3X2)                                  0.29      48.30 r
+  div_67/U345/Y (INVX12)                                  0.10      48.40 f
+  div_67/u_div/u_add_PartRem_0_0_2/A[10] (ISE_DW01_add_274)
+                                                          0.00      48.40 f
+  div_67/u_div/u_add_PartRem_0_0_2/U162/Y (NOR2X1)        0.33      48.73 r
+  div_67/u_div/u_add_PartRem_0_0_2/U186/Y (NOR2X1)        0.28      49.01 f
+  div_67/u_div/u_add_PartRem_0_0_2/U206/Y (NAND2XL)       0.32      49.33 r
+  div_67/u_div/u_add_PartRem_0_0_2/U161/Y (NOR2X1)        0.17      49.50 f
+  div_67/u_div/u_add_PartRem_0_0_2/U187/Y (AO21X4)        0.25      49.75 f
+  div_67/u_div/u_add_PartRem_0_0_2/CO (ISE_DW01_add_274)
+                                                          0.00      49.75 f
+  div_67/U872/Y (CLKMX2X3)                                0.22      49.97 f
+  div_67/quotient[0] (ISE_DW_div_uns_6)                   0.00      49.97 f
+  U1288/Y (CLKMX2X2)                                      0.21      50.18 f
+  avg_reg_reg[0]/D (DFFRX1)                               0.00      50.18 f
+  data arrival time                                                 50.18
+
+  clock clk (rise edge)                                  50.00      50.00
+  clock network delay (ideal)                             0.50      50.50
+  clock uncertainty                                      -0.10      50.40
+  avg_reg_reg[0]/CK (DFFRX1)                              0.00      50.40 r
+  library setup time                                     -0.22      50.18
+  data required time                                                50.18
+  --------------------------------------------------------------------------
+  data required time                                                50.18
+  data arrival time                                                -50.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

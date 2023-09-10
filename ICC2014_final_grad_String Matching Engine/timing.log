@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SME
+Version: O-2018.06
+Date   : Sat Apr  8 11:31:24 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: T_data[1] (input port clocked by clk)
+  Endpoint: P_addr[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SME                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     1.00       1.50 f
+  T_data[1] (in)                           0.06       1.56 f
+  U641/Y (NOR4XL)                          0.62       2.18 r
+  U1113/Y (MXI2X1)                         0.29       2.48 f
+  U621/Y (NAND3X1)                         0.53       3.01 r
+  U611/Y (NOR2BX1)                         0.38       3.39 f
+  U634/Y (AND2X2)                          0.29       3.68 f
+  U530/Y (AO21X1)                          0.32       4.00 f
+  U710/Y (NOR2X1)                          0.39       4.39 r
+  U714/Y (NAND4X2)                         0.33       4.72 f
+  U1076/Y (NAND2X1)                        0.35       5.07 r
+  U624/Y (NAND3X1)                         0.21       5.28 f
+  U763/Y (NAND4BX1)                        0.56       5.84 r
+  U509/Y (NAND3X2)                         0.32       6.17 f
+  U548/Y (OR2X1)                           0.43       6.59 f
+  U779/Y (OR2X1)                           0.34       6.93 f
+  U522/CO (ADDFXL)                         0.62       7.55 f
+  U523/Y (OR2X4)                           0.29       7.84 f
+  U665/Y (OR2X8)                           0.19       8.02 f
+  U534/Y (NOR2X1)                          0.33       8.35 r
+  U614/Y (INVXL)                           0.21       8.57 f
+  U715/Y (NAND2X1)                         0.23       8.80 r
+  U615/Y (NAND2X2)                         0.16       8.96 f
+  U519/Y (BUFX20)                          0.37       9.32 f
+  P_addr[6] (out)                          0.00       9.32 f
+  data arrival time                                   9.32
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  output external delay                   -1.00       9.40
+  data required time                                  9.40
+  -----------------------------------------------------------
+  data required time                                  9.40
+  data arrival time                                  -9.32
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+1

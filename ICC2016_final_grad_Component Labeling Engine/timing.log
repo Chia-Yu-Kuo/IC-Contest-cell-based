@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CLE
+Version: O-2018.06
+Date   : Sun Apr  9 18:47:47 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: win_oct_reg[2][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sram_a[9] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLE                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  win_oct_reg[2][1]/CK (DFFRX4)            0.00 #     0.50 r
+  win_oct_reg[2][1]/Q (DFFRX4)             0.58       1.08 f
+  U6952/Y (INVX3)                          0.20       1.28 r
+  U6031/Y (AND3X6)                         0.18       1.46 r
+  U6032/Y (AND4X6)                         0.21       1.67 r
+  U7253/Y (INVX20)                         0.09       1.77 f
+  U7495/Y (NAND2X2)                        0.26       2.03 r
+  U6888/Y (NAND2X1)                        0.18       2.20 f
+  U6128/Y (AOI32X4)                        0.49       2.70 r
+  U6126/Y (NAND3X2)                        0.10       2.80 f
+  U12961/Y (AOI32X2)                       0.31       3.11 r
+  U12955/Y (NAND4BX4)                      0.21       3.32 f
+  U6996/Y (BUFX12)                         0.25       3.57 f
+  U12946/Y (AOI32X4)                       0.50       4.07 r
+  U7362/Y (NAND2X8)                        0.13       4.20 f
+  U7038/Y (XOR2X1)                         0.32       4.52 r
+  U6263/Y (NAND4X4)                        0.18       4.70 f
+  U6151/Y (NOR2X6)                         0.11       4.82 r
+  U6153/Y (OR2X8)                          0.14       4.96 r
+  U7325/Y (NAND3BX4)                       0.11       5.06 f
+  U6219/Y (INVX3)                          0.09       5.16 r
+  U6217/Y (NAND3X4)                        0.10       5.25 f
+  U6218/Y (NAND2X4)                        0.10       5.35 r
+  U12953/Y (OAI211X4)                      0.33       5.68 f
+  U6795/Y (INVX8)                          0.11       5.79 r
+  U6041/Y (NAND2X4)                        0.08       5.87 f
+  U6043/Y (NAND2X4)                        0.14       6.01 r
+  U6627/Y (OA21X4)                         0.21       6.22 r
+  U6626/Y (NAND2X6)                        0.08       6.30 f
+  U7040/Y (INVX6)                          0.09       6.39 r
+  U7324/Y (NAND3BX4)                       0.13       6.52 f
+  U8009/Y (NAND2BX4)                       0.21       6.72 f
+  U7287/Y (AOI32X2)                        0.22       6.94 r
+  U6342/Y (BUFX6)                          0.16       7.10 r
+  U7914/Y (CLKBUFX20)                      0.30       7.40 r
+  sram_a[9] (out)                          0.00       7.40 r
+  data arrival time                                   7.40
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.50       8.50
+  clock uncertainty                       -0.10       8.40
+  output external delay                   -1.00       7.40
+  data required time                                  7.40
+  -----------------------------------------------------------
+  data required time                                  7.40
+  data arrival time                                  -7.40
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

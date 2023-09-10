@@ -1,0 +1,72 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: O-2018.06
+Date   : Fri Mar  3 18:12:50 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: data_reg_1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_reg_3_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  data_reg_1_reg[0]/CK (DFFRX1)            0.00       0.50 r
+  data_reg_1_reg[0]/Q (DFFRX1)             0.60       1.10 r
+  add_215/A[0] (DT_DW01_inc_2)             0.00       1.10 r
+  add_215/U1_1_1/CO (ADDHX1)               0.32       1.42 r
+  add_215/U1_1_2/CO (CMPR22X2)             0.22       1.64 r
+  add_215/U1_1_3/CO (ADDHX1)               0.25       1.89 r
+  add_215/U1_1_4/CO (ADDHX1)               0.27       2.16 r
+  add_215/U1_1_5/S (ADDHX1)                0.49       2.65 r
+  add_215/SUM[5] (DT_DW01_inc_2)           0.00       2.65 r
+  U801/Y (CLKINVX1)                        0.53       3.18 f
+  U426/Y (NOR2XL)                          0.81       4.00 r
+  U768/Y (OAI32X1)                         0.44       4.44 f
+  U767/Y (AOI21X1)                         0.33       4.76 r
+  U765/Y (OAI32X1)                         0.21       4.98 f
+  U764/Y (OAI21XL)                         0.48       5.46 r
+  U763/Y (AOI2BB1X1)                       0.34       5.80 r
+  U762/Y (AOI221XL)                        0.30       6.10 f
+  U419/Y (INVX1)                           0.52       6.61 r
+  U431/Y (OAI211X1)                        0.45       7.07 f
+  U437/Y (INVXL)                           0.42       7.49 r
+  U435/Y (NAND3X1)                         0.22       7.70 f
+  U436/Y (NAND2X1)                         0.30       8.00 r
+  U669/Y (CLKINVX1)                        0.59       8.59 f
+  U639/Y (OAI221XL)                        0.89       9.49 r
+  U386/Y (CLKINVX1)                        0.28       9.77 f
+  U638/Y (OAI221XL)                        0.32      10.09 r
+  data_reg_3_reg[1]/D (DFFRX1)             0.00      10.09 r
+  data arrival time                                  10.09
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  data_reg_3_reg[1]/CK (DFFRX1)            0.00      10.40 r
+  library setup time                      -0.30      10.10
+  data required time                                 10.10
+  -----------------------------------------------------------
+  data required time                                 10.10
+  data arrival time                                 -10.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1

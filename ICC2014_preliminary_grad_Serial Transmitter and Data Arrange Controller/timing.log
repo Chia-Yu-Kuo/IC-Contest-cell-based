@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : STI_DAC
+Version: O-2018.06
+Date   : Sun Feb 19 19:36:20 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: load (input port clocked by clk)
+  Endpoint: counter_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  STI_DAC            tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 r
+  load (in)                                0.01       5.51 r
+  U488/Y (AND4X1)                          0.28       5.79 r
+  U486/Y (NOR3X1)                          0.15       5.94 f
+  U485/Y (OAI211X1)                        0.41       6.35 r
+  U415/Y (XNOR2X1)                         0.42       6.77 f
+  U413/Y (OAI21X1)                         0.79       7.56 r
+  U493/Y (OAI2BB2XL)                       0.36       7.91 r
+  counter_reg[0]/D (DFFRX1)                0.00       7.91 r
+  data arrival time                                   7.91
+
+  clock clk (rise edge)                   98.00      98.00
+  clock network delay (ideal)              0.50      98.50
+  clock uncertainty                       -0.10      98.40
+  counter_reg[0]/CK (DFFRX1)               0.00      98.40 r
+  library setup time                      -0.29      98.11
+  data required time                                 98.11
+  -----------------------------------------------------------
+  data required time                                 98.11
+  data arrival time                                  -7.91
+  -----------------------------------------------------------
+  slack (MET)                                        90.19
+
+
+1
