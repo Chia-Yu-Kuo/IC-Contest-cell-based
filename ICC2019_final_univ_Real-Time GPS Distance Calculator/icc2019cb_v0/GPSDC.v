@@ -1,4 +1,6 @@
-
+//synopsys translate_off
+`include "DW02_mult.v"
+//synopsys translate_on
 
 module GPSDC(clk, reset_n, DEN, LON_IN, LAT_IN, COS_ADDR, COS_DATA, ASIN_ADDR, ASIN_DATA, Valid, a, D);
 input              clk;
